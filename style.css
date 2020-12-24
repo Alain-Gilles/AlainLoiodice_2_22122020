@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway'), url('polices/Raleway-Regular.woff') format('woff');
+    src: local('Raleway'), url('polices/Raleway-Regular.ttf') format('ttf');
+    }
+body
+{
+    font-family: 'Raleway','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.page
+{
+    max-width: 90%;
+    margin:auto;
+}
+.logreservia
+{
+    width:6em;
+}
+
+.entmen
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.entmen ul
+{
+    display:flex;
+    flex-direction:row;
+    list-style-type: none;
+}
+
+.entmen a
+{
+    font-size:1em;
+    color:black;
+    text-decoration: none;
+    margin-right:1.5em;
+}
+
+#lm1
+{
+    border-top:1px #0065FC solid;
+    color:#0065FC;
+}
+
+#lm3
+{
+    color:#0065FC;
+}
+
+.entmen a:hover
+{
+    color:#0065FC; 
+}
+
+header h1
+{
+    font-size:1.5em;
+}
