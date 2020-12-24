@@ -8,14 +8,22 @@
 body
 {
     font-family: 'Raleway','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 1590px;
 }
 
 .page
 {
-    max-width: 90%;
-    margin:auto;
+    width:90%;
+    max-width: 100%;
+    padding:20px;
+    margin:0 auto;
 }
 
+img
+{
+    max-width:100%;
+    height:auto;
+}
 header
 {
     width:100%;
@@ -30,13 +38,42 @@ header
     border:1px solid black;
 }
 
-.hebergement
+.hebergements
+{
+    width:65.71%;
+}
+
+.pavehebergement
 {
     box-sizing:border-box;
-    width:65.71%;
+    width:100%;
     background-color: pink;
     border:1px solid rebeccapurple;
-    margin-right:2.87%;
+    margin-right:0%;
+    margin-left:0%;
+    display:flex;
+    flex-direction:row;
+    flex-flow:wrap;
+    justify-content:space-around;
+    /*padding-top:10px;
+    padding-bottom:10px;*/
+    align-content:space-around;
+}
+
+.afficherplus
+{
+    display:block;
+    padding-top:10px;
+}
+
+.carteh
+{
+    box-sizing:border-box;
+    flex-basis:27.17%;
+    background-color: white;
+    border:1px solid black;
+    margin-right:2.5%;
+    margin-left:2.5%;
 }
 
 .populaires
@@ -45,6 +82,18 @@ header
     width:31.41%;
     background-color: rosybrown;
     border:1px solid rebeccapurple;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.cartep
+{
+    box-sizing:border-box;
+    background-color: white;
+    border:1px solid black;
+    margin-left:5%;
+    margin-right:5%;
 }
 
 .centre
@@ -52,6 +101,7 @@ header
     display:flex;
     flex-direction:row;
 }
+
 .activites
 {
     width:100%;
