@@ -35,12 +35,13 @@ header
 {
     width:100%;
     background-color:burlywood;
-    border:1px solid black;
+    border:5px solid black;
 }
 
-.hebergements
+.hebergement
 {
-    width:65.71%;
+    width:70%;
+    border:2px red solid;
 }
 
 .pavehebergement
@@ -58,33 +59,44 @@ header
     /*padding-top:10px;
     padding-bottom:10px;*/
     align-content:space-around;
+    height:700px;
 }
 
 .afficherplus
 {
     display:block;
     padding-top:10px;
+    padding-bottom:10px;
 }
 
 .carteh
 {
     box-sizing:border-box;
-    flex-basis:27.17%;
+    flex-basis:28.3%;
+    height:300px;
     background-color: white;
     border:1px solid black;
     margin-right:2.5%;
     margin-left:2.5%;
+    border-radius:10px;
 }
 
 .populaires
 {
+    width:30%;
+    border:2px green solid;
+}
+.pavepopulaires
+{
     box-sizing:border-box;
-    width:31.41%;
+    width:100%;
     background-color: rosybrown;
     border:1px solid rebeccapurple;
     display:flex;
     flex-direction:column;
+    height:700px;
     justify-content:space-around;
+    padding-top:5px;
 }
 
 .cartep
@@ -94,7 +106,11 @@ header
     border:1px solid black;
     margin-left:5%;
     margin-right:5%;
+    justify-content:space-around;
+    height:190px;
+    border-radius:10px;
 }
+
 
 .centre
 {
@@ -107,6 +123,35 @@ header
     width:100%;
     background-color: cornsilk;
     border:1px solid black;
+}
+
+.carteap
+{
+    display:flex;
+    flex-direction:column;
+}
+
+.carteag
+{
+    border:1px green solid;
+    box-sizing:border-box;
+    flex-basis:20%;
+    height:300px;
+    border-radius:10px;
+}
+
+.activites{
+    width:100%;
+    border:2px green solid;
+}
+
+.paveactivites
+{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    margin-bottom:10px;
 }
 
 footer
