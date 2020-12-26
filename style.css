@@ -11,12 +11,33 @@ body
     max-width: 1590px;
 }
 
+h1
+{
+    font-size: 1.5em;
+}
+
+h2
+{
+    font-size:1.2em;
+}
+
+
+{
+    font-size:1.0em;
+}
+
+a
+{
+    font-size:0.8em;
+}
+
+
 .page
 {
     width:90%;
-    max-width: 100%;
+    /*max-width: 100%;
     padding:20px;
-    margin:0 auto;
+    margin:0 auto;*/
 }
 
 /*img
@@ -38,7 +59,7 @@ header
     flex-direction:row;
 }
 
-.centre h2
+.centre h2 p
 {
     font-size:100%;
 }
@@ -96,7 +117,7 @@ header
 {
     border-top-left-radius:10px;
     border-top-right-radius:10px;
-    /*height:60%;*/
+    height:60%;
     width:95%;
     margin-left:2%;
     margin-top:2%;
@@ -104,20 +125,26 @@ header
     margin-bottom:1px;
 }
 
-/* clip path inset créait un masque de saisi valeurs Haut Droit Bas Gauche
-round Haut Droit   Haut Gauche   Bas droit  Bas Gauche */ 
-.i4
-{
-   /* clip-path: inset(2% 0 25% 0 round 5px 5px 0px 0px); */
-   height:60%;
-    
-}
-
 .descrimgh
 {
     height: auto;
+    border:1px solid black;
+    padding:1px 0;
+    line-height: 100%;
 }
 
+.descrimgh p
+{
+    margin-top:10px;
+    margin-left:10px;
+    border:1px solid black;
+}
+
+.descrimgh p:nth-child(2)
+{
+    border:1px solid red;
+    margin-top:-4px;
+}
 .populaires
 {
     width:30%;
@@ -148,7 +175,7 @@ round Haut Droit   Haut Gauche   Bas droit  Bas Gauche */
 }
 
 
-@media only screen and (min-width:600px) and (max-width: 900px) 
+@media only screen and (min-width:501px) and (max-width: 959px) 
 {
 
 .carteh
@@ -164,7 +191,7 @@ round Haut Droit   Haut Gauche   Bas droit  Bas Gauche */
 }
 }
 
-@media only screen and (max-width: 599px) 
+@media only screen and (max-width: 499px) 
 {
 
 /*--- md 25/12 -----------*/    
@@ -302,7 +329,6 @@ footer
 
 .entmen a
 {
-    font-size:1em;
     color:black;
     text-decoration: none;
     margin-right:1.5em;
@@ -324,7 +350,3 @@ footer
     color:#0065FC; 
 }
 
-header h1
-{
-    font-size:1.5em;
-}
