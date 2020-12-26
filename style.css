@@ -19,11 +19,11 @@ body
     margin:0 auto;
 }
 
-img
+/*img
 {
     max-width:100%;
     height:auto;
-}
+}*/
 header
 {
     width:100%;
@@ -79,10 +79,43 @@ header
     flex-basis:28.3%;
     height:300px;
     background-color: white;
-    border:1px solid black;
+    border:1px solid rgb(243, 239, 239);
     margin-right:2.5%;
     margin-left:2.5%;
     border-radius:10px;
+}
+
+.carteh a
+{
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+.carteh img
+{
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    /*height:60%;*/
+    width:95%;
+    margin-left:2%;
+    margin-top:2%;
+    display:block;
+    margin-bottom:1px;
+}
+
+/* clip path inset créait un masque de saisi valeurs Haut Droit Bas Gauche
+round Haut Droit   Haut Gauche   Bas droit  Bas Gauche */ 
+.i4
+{
+   /* clip-path: inset(2% 0 25% 0 round 5px 5px 0px 0px); */
+   height:60%;
+    
+}
+
+.descrimgh
+{
+    height: auto;
 }
 
 .populaires
@@ -147,6 +180,12 @@ header
 .hebergement
 {
     width:100%;
+    height:1400px;
+}
+
+.pavehebergement
+{
+    height:90%;
 }
 
 .populaires
@@ -157,8 +196,8 @@ header
 .carteh
 {
     box-sizing:border-box;
-    flex-basis:60%;
-    height:100px;
+    flex-basis:100%;
+    height:180px;
     background-color: white;
     border:1px solid black;
     margin-right:2.5%;
