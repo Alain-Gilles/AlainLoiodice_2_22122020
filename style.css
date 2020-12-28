@@ -5,39 +5,93 @@
     src: local('Raleway'), url('polices/Raleway-Regular.woff') format('woff');
     src: local('Raleway'), url('polices/Raleway-Regular.ttf') format('ttf');
     }
+    
+/* définitions caractéristiques du Body ( famille de police de caractères, largeur maximale de l'écran
+et taille de police fixée à 100% */
+
 body
 {
     font-family: 'Raleway','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     max-width: 1590px;
+    font-size:100%;
 }
+
+/* paramétrage du contener 90% du body et centrage */
+
+.wrapper
+{
+    width:90%;
+    margin:0 auto;
+}
+
+/* parametrage des tailles de polices de caractères par défaut*/
 
 h1
 {
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 h2
 {
-    font-size:1.2em;
+    font-size:1.4em;
 }
 
-
+p
 {
     font-size:1.0em;
 }
 
 a
 {
-    font-size:0.8em;
+    font-size:1em;
 }
 
+/* definition des differentes tailles de polices selon les media queries définis */
 
-.page
+@media only screen and (max-width: 499px) 
 {
-    width:90%;
-    /*max-width: 100%;
-    padding:20px;
-    margin:0 auto;*/
+    h1,h2
+    {
+        font-size:85%;
+    }
+
+    p
+    {
+        font-size:70%;
+    }
+
+    a
+    {
+        font-size:85%;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width: 959px) 
+{
+    
+    h1,h2
+    {
+        font-size:90%;
+    }
+
+    p
+    {
+        font-size:75%;
+    }
+
+    a
+    {
+        font-size:90%;
+    }
+
+}
+
+@media only screen and (mix-width: 960px) 
+{
+h1,h2,p,a
+{
+    font-size:100%;
+}
 }
 
 /*img
@@ -45,6 +99,9 @@ a
     max-width:100%;
     height:auto;
 }*/
+
+/* paramétrage des largeurs des conteneurs strucurant de la page header centre activites footer par rapport au wrapper */
+
 header
 {
     width:100%;
@@ -59,15 +116,183 @@ header
     flex-direction:row;
 }
 
-.centre h2 p
-{
-    font-size:100%;
+.activites{
+    width:100%;
+    border:2px green solid;
 }
+
+footer
+{
+    width:100%;
+    background-color: moccasin;
+    border:1px solid black;
+}
+
+/* traitement du conteneur entete */
+
+/* logo reservia definition de la largeur , image étant en svg le logo sera proportionnel en hauteur */
+
+.logreservia
+{
+    width:8em;
+}
+
+/* traitement du menu */
+
+/* le logo et le menu sont positioonés sur la même ligne */
+
+.entmen
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+/* le menu est positionné en ligne, suppression des points sur les éléments du menu */
+
+.entmen ul
+{
+    display:flex;
+    flex-direction:row;
+    list-style-type: none;
+}
+
+/* Police des éléments du menu , pas de soulignenemnt et marge droite entre chaque élément */
+
+.entmen a
+{
+    color:black;
+    text-decoration: none;
+    margin-right:1.5em;
+}
+
+/* hébergement  bordure haute et definition couleur de la police */
+
+#lm1
+{
+    border-top:1px #0065FC solid;
+    color:#0065FC;
+}
+
+/* s inscrire  definition couleur de la police */
+
+#lm3
+{
+    color:#0065FC;
+}
+
+/* survole des éléments du menu */
+
+.entmen a:hover
+{
+    color:#0065FC; 
+}
+
+.filtres
+{
+    padding-bottom:10px;
+}
+/* media queries pour traiter entete  position menu  */
+
+@media only screen and (max-width: 499px) 
+{
+
+.entmen
+{
+    display:block;
+    position:relative;
+}
+
+.entmen img
+{
+    display:block;
+}    
+
+.entmen ul
+{
+    display:block;
+}
+
+/* hebergement */
+
+#lm1
+{
+    position:absolute;
+    top:60px;
+    left:20px;
+    border-bottom:1px #0065FC solid;
+    border-top:0px;
+}
+
+/* activite */
+
+#lm2
+{
+    position:absolute;
+    top:60px;
+    right:50px;
+}
+
+/* s inscrire */
+
+#lm3
+{
+    position:absolute;
+    top:24px;
+    right:0px;
+}
+
+.titre
+{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:15px;
+}
+
+.titre h1
+{
+    margin-bottom:0px;
+}
+.titre p
+{
+    margin-top:4px;
+}
+
+.rechercher, .filtres
+
+{
+    margin-left:20px;
+    
+}
+
+/***************/
+
+}
+
+/* fin trt des media queries */
+
+/* fin de traitement du conteneur entete */
+
+/* definition des proportions des pavés hebergement et les plus populaires
+à l'interieur du contenaire  70% de largeur pour hebergement et 30% pour populiare */
 
 .hebergement
 {
     width:70%;
 }
+
+.populaires
+{
+    width:30%;
+}
+
+/* Traitement du pavé hebergement. Utilisation de flexbox alignement des elements en ligne avec passage à la ligne si dépassement 
+Les elements sont justifiés avec un espace autour en ligne et chaque ligne est alignée en hauteur avec des espaces autour  
+La hauteur du bloc est fixée à 700px et nous allons donner à chaque élément une hauteur de 300px ce qui permettra d'afficher deux lignes
+dans le contener flex.
+Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet de mettre trois éléments par ligne.*/
+
+/* definition du contener */
 
 .pavehebergement
 {
@@ -79,10 +304,7 @@ header
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    /*flex-flow:wrap;*/
     justify-content:space-around;
-    /*padding-top:10px;
-    padding-bottom:10px;*/
     align-content:space-around;
     height:700px;
 }
@@ -94,6 +316,8 @@ header
     padding-bottom:10px;
 }
 
+/* definition des elements (items) */
+
 .carteh
 {
     box-sizing:border-box;
@@ -104,7 +328,57 @@ header
     margin-right:2.5%;
     margin-left:2.5%;
     border-radius:10px;
+    overflow:hidden;
+    
 }
+
+/* Traitement de l'image de chaque items */
+/* definition d'un bordus-radius haut droit et gauche 
+fixation de la hauteur de l'image à 60% 
+largeur à 95% */
+
+.carteh img
+{
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    /*height:60%;*/
+    width:95%; 
+    margin-left:2%;
+    margin-top:-5px;
+    display:block;
+    margin-bottom:1px;
+    /*
+    /* Haut Droite Bas Gauche ( Top Right Bottom Left ) Round idem border radius HG HD BD BG */
+    /* creait un masque sur la photo pour n'en afficher q'une partie */
+
+    clip-path:inset(10% 0 5% 0 round 10px 10px 0px 0px);
+    
+    /***********************/
+}
+
+/* pave traitant le contenu sous l'image nom de l'image, prix de la nuité...*/
+
+.descrimgh
+{
+    height: auto;
+    padding:1px 0;
+    line-height: 100%;
+    
+}
+
+.descrimgh p
+{
+    margin-top:10px;
+    margin-left:10px;
+    margin-bottom:0px;
+}
+
+.descrimgh p:nth-child(2)
+{
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
 
 .carteh a
 {
@@ -113,42 +387,9 @@ header
     height:100%;
 }
 
-.carteh img
-{
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-    height:60%;
-    width:95%;
-    margin-left:2%;
-    margin-top:2%;
-    display:block;
-    margin-bottom:1px;
-}
+/*
+/* Traitement du pave populaire */
 
-.descrimgh
-{
-    height: auto;
-    border:1px solid black;
-    padding:1px 0;
-    line-height: 100%;
-}
-
-.descrimgh p
-{
-    margin-top:10px;
-    margin-left:10px;
-    border:1px solid black;
-}
-
-.descrimgh p:nth-child(2)
-{
-    border:1px solid red;
-    margin-top:-4px;
-}
-.populaires
-{
-    width:30%;
-}
 .pavepopulaires
 {
     box-sizing:border-box;
@@ -174,6 +415,7 @@ header
     border-radius:10px;
 }
 
+/*    media queries  */
 
 @media only screen and (min-width:501px) and (max-width: 959px) 
 {
@@ -194,20 +436,20 @@ header
 @media only screen and (max-width: 499px) 
 {
 
-/*--- md 25/12 -----------*/    
+ 
 .centre
 {
     width:100%;
     background-color:burlywood;
     display:flex;
     flex-direction:column-reverse;
-    /*--- fin md 25/12 ---------*/
+    
 } 
 
 .hebergement
 {
     width:100%;
-    height:1400px;
+    height:2000px;
 }
 
 .pavehebergement
@@ -224,22 +466,46 @@ header
 {
     box-sizing:border-box;
     flex-basis:100%;
-    height:180px;
+    height:250px;
     background-color: white;
     border:1px solid black;
     margin-right:2.5%;
     margin-left:2.5%;
     border-radius:10px;
-}
+    overflow:hidden;
 }
 
-
-.activites
+.carteh img
 {
-    width:100%;
-    background-color: cornsilk;
-    border:1px solid black;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    /*height:60%;*/
+    width:95%; 
+    margin-left:2%;
+    margin-top:-5px;
+    display:block;
+    margin-bottom:1px;
+    
+    /* Haut Droite Bas Gauche ( Top Right Bottom Left ) Round idem border radius HG HD BD BG */
+    /* creait un masque sur la photo pour n'en afficher q'une partie */
+
+    clip-path:inset(10% 0 25% 0 round 10px 10px 0px 0px);
+    
+    /***********************/
 }
+
+.descrimgh
+{
+    height: auto;
+    padding:1px 0;
+    line-height: 100%;
+    margin-top:-30px;
+    
+}
+
+}
+
+/* fin media queries */
 
 .carteap
 {
@@ -256,11 +522,6 @@ header
     border-radius:10px;
 }
 
-.activites{
-    width:100%;
-    border:2px green solid;
-}
-
 .paveactivites
 {
     width:100%;
@@ -268,13 +529,6 @@ header
     flex-direction:row;
     justify-content:space-around;
     margin-bottom:10px;
-}
-
-footer
-{
-    width:100%;
-    background-color: moccasin;
-    border:1px solid black;
 }
 
 .apropos
@@ -306,47 +560,5 @@ footer
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-}
-
-.logreservia
-{
-    width:6em;
-}
-
-.entmen
-{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-}
-
-.entmen ul
-{
-    display:flex;
-    flex-direction:row;
-    list-style-type: none;
-}
-
-.entmen a
-{
-    color:black;
-    text-decoration: none;
-    margin-right:1.5em;
-}
-
-#lm1
-{
-    border-top:1px #0065FC solid;
-    color:#0065FC;
-}
-
-#lm3
-{
-    color:#0065FC;
-}
-
-.entmen a:hover
-{
-    color:#0065FC; 
 }
 
