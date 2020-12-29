@@ -7,16 +7,17 @@
     }
     
 /* définitions caractéristiques du Body ( famille de police de caractères, largeur maximale de l'écran
-et taille de police fixée à 100% */
+fixée à 1590px avec marges auto et taille de police fixée à 100% */
 
 body
 {
     font-family: 'Raleway','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     max-width: 1590px;
     font-size:100%;
+    margin:auto;
 }
 
-/* paramétrage du contener 90% du body et centrage */
+/* paramétrage du contener 90% du body et centrage auto */
 
 .wrapper
 {
@@ -94,12 +95,6 @@ h1,h2,p,a
 }
 }
 
-/*img
-{
-    max-width:100%;
-    height:auto;
-}*/
-
 /* paramétrage des largeurs des conteneurs strucurant de la page header centre activites footer par rapport au wrapper */
 
 header
@@ -128,7 +123,7 @@ footer
     border:1px solid black;
 }
 
-/* traitement du conteneur entete */
+/* traitement du conteneur entete ********************************************************************/
 
 /* logo reservia definition de la largeur , image étant en svg le logo sera proportionnel en hauteur */
 
@@ -271,7 +266,9 @@ footer
 
 /* fin trt des media queries */
 
-/* fin de traitement du conteneur entete */
+/* fin de traitement du conteneur entete *************************************************/
+
+/* traitement du contener centre qui contient les contener hebergement et populaire */
 
 /* definition des proportions des pavés hebergement et les plus populaires
 à l'interieur du contenaire  70% de largeur pour hebergement et 30% pour populiare */
@@ -309,6 +306,12 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     height:700px;
 }
 
+.pavehebergement a
+{
+    text-decoration:none;
+    color:black;
+}
+
 .afficherplus
 {
     display:block;
@@ -332,16 +335,116 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     
 }
 
+/******************************************************************************/
+/*                                                                            */  
+.cartehimg1
+{
+    width:95%;
+    height:60%;
+    /*border:1px solid black;*/
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    margin:auto;
+    margin-top:2px;
+    background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+       
+
+}
+
+.cartehimg2
+{
+    width:95%;
+    height:60%;
+    /*border:1px solid black;*/
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    margin:auto;
+    margin-top:2px;
+    background-image: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+
+.cartehimg3
+{
+    width:95%;
+    height:60%;
+    /*border:1px solid black;*/
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    margin:auto;
+    margin-top:2px;
+    background-image: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+
+.cartehimg4
+{
+    width:95%;
+    height:60%;
+    /*border:1px solid black;*/
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    margin:auto;
+    margin-top:2px;
+    background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 0px 0px;
+
+
+}
+
+.cartehimg5
+{
+    width:95%;
+    height:60%;
+    /*border:1px solid black;*/
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    margin:auto;
+    margin-top:2px;
+    background-image: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+
+.cartehimg6
+{
+    width:95%;
+    height:60%;
+    /*border:1px solid black;*/
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    margin:auto;
+    margin-top:2px;
+    background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 0 -60px;
+     
+
+}
+/*
+/*                                                                            */
+/******************************************************************************/
+
 /* Traitement de l'image de chaque items */
 /* definition d'un bordus-radius haut droit et gauche 
 fixation de la hauteur de l'image à 60% 
 largeur à 95% */
-
+/*
 .carteh img
 {
     border-top-left-radius:10px;
     border-top-right-radius:10px;
-    /*height:60%;*/
+    background-position: center;
     width:95%; 
     margin-left:2%;
     margin-top:-5px;
@@ -351,10 +454,10 @@ largeur à 95% */
     /* Haut Droite Bas Gauche ( Top Right Bottom Left ) Round idem border radius HG HD BD BG */
     /* creait un masque sur la photo pour n'en afficher q'une partie */
 
-    clip-path:inset(10% 0 5% 0 round 10px 10px 0px 0px);
+/*clip-path:inset(10% 0 5% 0 round 10px 10px 0px 0px);
     
     /***********************/
-}
+/*}*/
 
 /* pave traitant le contenu sous l'image nom de l'image, prix de la nuité...*/
 
