@@ -317,7 +317,7 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     flex-wrap:wrap;
     justify-content:space-around;
     align-content:space-around;
-    height:700px;
+    height:600px;
 
 }
 
@@ -337,6 +337,10 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     display:block;
     padding-top:10px;
     padding-bottom:10px;
+    margin-left:4%;
+    text-decoration: none;
+    font-weight:bolder;
+    color:black;
 }
 
 /* definition des elements (items) */
@@ -345,7 +349,7 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 {
     box-sizing:border-box;
     flex-basis:28.3%;
-    height:300px;
+    height:250px;
     background-color: white;
     border:1px solid rgb(243, 239, 239);
     margin-right:2.5%;
@@ -370,9 +374,25 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     margin-top:2px;
     background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
     background-repeat:no-repeat;
+    background-origin:padding-box;
     background-size:cover;
-       
+    background-position: 0 0;
 
+}
+
+.starh1
+{
+    margin-left:10px;
+}
+.starh1 .fa-star
+{
+    color:#0065FC;
+    margin-right:1px;
+}
+
+.starh1 .fa-star:nth-child(5)
+{
+    color:rgb(197, 203, 209)
 }
 
 /* Hotel du port */
@@ -388,8 +408,20 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     margin-top:2px;
     background-image: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
     background-repeat:no-repeat;
+    background-origin:padding-box;
     background-size:cover;
+    background-position: 0 0;
 
+}
+
+.starh2
+{
+    margin-left:10px;
+}
+.starh2 .fa-star
+{
+    color:#0065FC;
+    margin-right:1px;
 }
 
 /* Hotel les mouettes */
@@ -405,8 +437,25 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     margin-top:2px;
     background-image: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
     background-repeat:no-repeat;
+    background-origin:padding-box;
     background-size:cover;
+    background-position: 0 0;
 
+}
+
+.starh3
+{
+    margin-left:10px;
+}
+.starh3 .fa-star
+{
+    color:#0065FC;
+    margin-right:1px;
+}
+
+.starh3 .fa-star:nth-child(5)
+{
+    color:rgb(197, 203, 209)
 }
 
 /* Hotel de la Mer */
@@ -419,13 +468,33 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     border-top-left-radius:10px;
     border-top-right-radius:10px;
     margin:auto;
-    margin-top:2px;
+    margin-top:4px;
     background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
     background-repeat:no-repeat;
+    background-origin:padding-box;
     background-size:cover;
-    background-position: 0px 0px;
+    background-position: 0px -30px;
 
+}
 
+.starh4
+{
+    margin-left:10px;
+}
+.starh4 .fa-star
+{
+    color:#0065FC;
+    margin-right:1px;
+}
+
+.starh4 .fa-star:nth-child(4)
+{
+    color:rgb(197, 203, 209)
+}
+
+.starh4 .fa-star:nth-child(5)
+{
+    color:rgb(197, 203, 209)
 }
 
 /* Auberge le Palmier */
@@ -440,8 +509,24 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     margin-top:2px;
     background-image: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
     background-repeat:no-repeat;
+    background-origin:padding-box;
     background-size:cover;
+    background-position: 0 0;
+}
 
+.starh5
+{
+    margin-left:10px;
+}
+.starh5 .fa-star
+{
+    color:#0065FC;
+    margin-right:1px;
+}
+
+.starh5 .fa-star:nth-child(5)
+{
+    color:rgb(197, 203, 209)
 }
 
 /* Hotel chez Amina */
@@ -457,10 +542,19 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     margin-top:2px;
     background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
     background-repeat:no-repeat;
+    background-origin:padding-box;
     background-size:cover;
-    background-position: 0 -90px;
-     
+    background-position: 0 -130px;
+}
 
+.starh6
+{
+    margin-left:10px;
+}
+.starh6 .fa-star
+{
+    color:#0065FC;
+    margin-right:1px;
 }
 
 /* pave traitant le contenu sous l'image nom de l'image, prix de la nuité...*/
@@ -575,7 +669,9 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     margin:2px;
     background-image: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
     background-repeat:no-repeat;
-    background-size:cover;   
+    background-size:cover; 
+    background-origin:padding-box;
+    background-position: 0 0;  
 }
 
 .cartepimg2
@@ -587,7 +683,9 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     margin:2px;
     background-image: url("images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
     background-repeat:no-repeat;
-    background-size:cover;   
+    background-size:cover; 
+    background-origin:padding-box;
+    background-position: 0 0;  
 }
 
 .cartepimg3
@@ -599,7 +697,9 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     margin:2px;
     background-image: url("images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
     background-repeat:no-repeat;
-    background-size:cover;   
+    background-size:cover; 
+    background-origin:padding-box;
+    background-position: 0 0;  
 }
 
 
@@ -612,9 +712,8 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 {
     box-sizing:border-box;
     flex-basis:40%;
-    height:200px;
+    height:180px;
     background-color: white;
-    border:1px solid black;
     margin-right:2.5%;
     margin-left:2.5%;
     border-radius:10px;
