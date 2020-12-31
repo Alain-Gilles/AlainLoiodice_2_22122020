@@ -104,7 +104,7 @@ h1,h2,p,a
 }
 }
 
-/* paramétrage des largeurs des conteneurs strucurant de la page header centre activites footer par rapport au wrapper */
+/* paramétrage des largeurs des conteneurs structurant de la page header centre activites footer par rapport au wrapper */
 
 header
 {
@@ -119,9 +119,9 @@ header
     flex-direction:row;
 }
 
-.activites{
+.activites
+{
     width:100%;
-    border:2px green solid;
 }
 
 footer
@@ -321,6 +321,11 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 
 }
 
+.hebergement h2
+{
+    margin-left:2.5%;
+}
+
 .pavehebergement a
 {
     text-decoration:none;
@@ -356,7 +361,7 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
                                                                             
 .cartehimg1
 {
-    /*width:95%;*/
+    width:95%;
     height:60%;
     /*border:1px solid black;*/
     border-top-left-radius:10px;
@@ -457,33 +462,6 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
      
 
 }
-/*
-/*                                                                            */
-/******************************************************************************/
-
-/* Traitement de l'image de chaque items */
-/* definition d'un bordus-radius haut droit et gauche 
-fixation de la hauteur de l'image à 60% 
-largeur à 95% */
-/*
-.carteh img
-{
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-    background-position: center;
-    width:95%; 
-    margin-left:2%;
-    margin-top:-5px;
-    display:block;
-    margin-bottom:1px;
-    /*
-    /* Haut Droite Bas Gauche ( Top Right Bottom Left ) Round idem border radius HG HD BD BG */
-    /* creait un masque sur la photo pour n'en afficher q'une partie */
-
-/*clip-path:inset(10% 0 5% 0 round 10px 10px 0px 0px);
-    
-    /***********************/
-/*}*/
 
 /* pave traitant le contenu sous l'image nom de l'image, prix de la nuité...*/
 
@@ -495,17 +473,19 @@ largeur à 95% */
     
 }
 
-.descrimgh p
+.descrimgh p:first-child
 {
     margin-top:10px;
     margin-left:10px;
     margin-bottom:0px;
+    font-weight:bolder;
 }
 
 .descrimgh p:nth-child(2)
 {
     margin-top:0px;
     margin-bottom:0px;
+    margin-left:10px;
 }
 
 
@@ -517,7 +497,27 @@ largeur à 95% */
 }
 
 /*
-/* Traitement du pave populaire */
+/* Traitement du pave les plus populaire */
+/*                              */
+/* le titre h2 et l'icone chart line de la bibl font awesome sont positionnés dans un contener en flex */
+
+.titrepopulaires
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:baseline;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.fa-chart-line
+{
+    color:black;
+    
+}
+
+/* Traitements du contener contenant les trois cartes descriptives du pave les plus populaire */
 
 .pavepopulaires
 {
@@ -530,21 +530,82 @@ largeur à 95% */
     padding-top:5px;
 }
 
+.pavepopulaires a
+{
+    Text-decoration:none;
+    color:black;
+}
+
+/* definition des elements (items) */
+
 .cartep
 {
+    display:flex;
+    flex-direction:row;
     box-sizing:border-box;
     background-color: white;
-    border:1px solid black;
     margin-left:5%;
     margin-right:5%;
-    justify-content:space-around;
+    justify-content:flex-start;
     height:190px;
     border-radius:10px;
+    overflow:hidden;
 }
+
+.descrimgp
+{
+    margin-left: 5%;
+}
+
+.descrimgp p:first-child
+{
+    font-weight:bolder;
+}
+
+/******************************************************************************/
+/* 
+/* Hotel le soleil du matin */
+                                                                            
+.cartepimg1
+{
+    width:40%;
+    height:96%;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    margin:2px;
+    background-image: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;   
+}
+
+.cartepimg2
+{
+    width:40%;
+    height:96%;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    margin:2px;
+    background-image: url("images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;   
+}
+
+.cartepimg3
+{
+    width:40%;
+    height:96%;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    margin:2px;
+    background-image: url("images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;   
+}
+
 
 /*    media queries  */
 
-@media only screen and (min-width:501px) and (max-width: 959px) 
+@media only screen and (min-width:500px) and (max-width: 959px) 
 {
 
 .carteh
