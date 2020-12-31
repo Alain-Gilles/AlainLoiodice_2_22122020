@@ -46,6 +46,15 @@ a
 {
     font-size:1em;
 }
+/*
+/* definition des carcatéristiques des icones utilisés */
+/*                                                     */
+.fa-info
+{
+    margin-left:20px;
+    color:black;
+    font-size:2em;
+}
 
 /* definition des differentes tailles de polices selon les media queries définis */
 
@@ -106,7 +115,6 @@ header
 .centre
 {
     width:100%;
-    background-color:burlywood;
     display:flex;
     flex-direction:row;
 }
@@ -275,12 +283,19 @@ footer
 
 .hebergement
 {
-    width:70%;
+    width:68%;
+    background-color: #f2f2f2;
+    border-radius:10px;
+   
+    
 }
 
 .populaires
 {
     width:30%;
+    background-color: #f2f2f2;
+    border-radius:10px;
+    margin-left:2%;
 }
 
 /* Traitement du pavé hebergement. Utilisation de flexbox alignement des elements en ligne avec passage à la ligne si dépassement 
@@ -295,7 +310,6 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 {
     box-sizing:border-box;
     width:100%;
-    background-color: pink;
     margin-right:0%;
     margin-left:0%;
     display:flex;
@@ -304,6 +318,7 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     justify-content:space-around;
     align-content:space-around;
     height:700px;
+
 }
 
 .pavehebergement a
@@ -336,10 +351,12 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 }
 
 /******************************************************************************/
-/*                                                                            */  
+/* 
+/* Auberge Cannebiere */
+                                                                            
 .cartehimg1
 {
-    width:95%;
+    /*width:95%;*/
     height:60%;
     /*border:1px solid black;*/
     border-top-left-radius:10px;
@@ -352,6 +369,8 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
        
 
 }
+
+/* Hotel du port */
 
 .cartehimg2
 {
@@ -368,6 +387,8 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 
 }
 
+/* Hotel les mouettes */
+
 .cartehimg3
 {
     width:95%;
@@ -382,6 +403,8 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     background-size:cover;
 
 }
+
+/* Hotel de la Mer */
 
 .cartehimg4
 {
@@ -400,6 +423,7 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 
 }
 
+/* Auberge le Palmier */
 .cartehimg5
 {
     width:95%;
@@ -415,9 +439,11 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 
 }
 
+/* Hotel chez Amina */
+
 .cartehimg6
 {
-    width:95%;
+    /*width:95%;*/
     height:60%;
     /*border:1px solid black;*/
     border-top-left-radius:10px;
@@ -427,7 +453,7 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
     background-repeat:no-repeat;
     background-size:cover;
-    background-position: 0 -60px;
+    background-position: 0 -90px;
      
 
 }
@@ -497,8 +523,6 @@ largeur à 95% */
 {
     box-sizing:border-box;
     width:100%;
-    background-color: rosybrown;
-    border:1px solid rebeccapurple;
     display:flex;
     flex-direction:column;
     height:700px;
@@ -533,7 +557,27 @@ largeur à 95% */
     margin-right:2.5%;
     margin-left:2.5%;
     border-radius:10px;
+    overflow:hidden;
 }
+
+/* Hotel chez Amina */
+
+.cartehimg6
+{
+    width:95%;
+    /*height:60%;*/
+    /*border:1px solid black;*/
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    margin:auto;
+    margin-top:2px;
+    background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 0 -80px;
+ }
+
+
 }
 
 @media only screen and (max-width: 499px) 
