@@ -60,20 +60,17 @@ a
 
 @media only screen and (max-width: 499px) 
 {
-    h1,h2
-    {
-        font-size:85%;
-    }
+ 
+h1,h2
+{
+    font-size:105;
+} 
 
-    p
-    {
-        font-size:70%;
-    }
+p,a
+{
+    font-size:100%;
+}
 
-    a
-    {
-        font-size:85%;
-    }
 }
 
 @media only screen and (min-width:500px) and (max-width: 959px) 
@@ -81,17 +78,17 @@ a
     
     h1,h2
     {
-        font-size:90%;
+        font-size:100%;
     }
 
     p
     {
-        font-size:75%;
+        font-size:85%;
     }
 
     a
     {
-        font-size:90%;
+        font-size:95%;
     }
 
 }
@@ -285,7 +282,8 @@ footer
 {
     width:68%;
     background-color: #f2f2f2;
-    border-radius:10px;
+    border-radius:20px;
+    position:relative;
    
     
 }
@@ -294,7 +292,7 @@ footer
 {
     width:30%;
     background-color: #f2f2f2;
-    border-radius:10px;
+    border-radius:20px;
     margin-left:2%;
 }
 
@@ -335,12 +333,14 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 .afficherplus
 {
     display:block;
-    padding-top:10px;
-    padding-bottom:10px;
+    /*padding-top:10px;
+    padding-bottom:10px;*/
     margin-left:4%;
     text-decoration: none;
     font-weight:bolder;
     color:black;
+    position:absolute;
+    bottom:7%;
 }
 
 /* definition des elements (items) */
@@ -352,9 +352,9 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     height:250px;
     background-color: white;
     border:1px solid rgb(243, 239, 239);
-    margin-right:2.5%;
-    margin-left:2.5%;
-    border-radius:10px;
+    margin-right:2%;
+    margin-left:2%;
+    border-radius:20px;
     overflow:hidden;
     
 }
@@ -368,10 +368,10 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     width:95%;
     height:60%;
     /*border:1px solid black;*/
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
     margin:auto;
-    margin-top:2px;
+    margin-top:2%;
     background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
     background-repeat:no-repeat;
     background-origin:padding-box;
@@ -402,10 +402,10 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     width:95%;
     height:60%;
     /*border:1px solid black;*/
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
     margin:auto;
-    margin-top:2px;
+    margin-top:2%;
     background-image: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
     background-repeat:no-repeat;
     background-origin:padding-box;
@@ -431,10 +431,10 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     width:95%;
     height:60%;
     /*border:1px solid black;*/
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
     margin:auto;
-    margin-top:2px;
+    margin-top:2%;
     background-image: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
     background-repeat:no-repeat;
     background-origin:padding-box;
@@ -465,10 +465,10 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     width:95%;
     height:60%;
     /*border:1px solid black;*/
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
     margin:auto;
-    margin-top:4px;
+    margin-top:2%;
     background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
     background-repeat:no-repeat;
     background-origin:padding-box;
@@ -503,10 +503,10 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     width:95%;
     height:60%;
     /*border:1px solid black;*/
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
     margin:auto;
-    margin-top:2px;
+    margin-top:2%;
     background-image: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
     background-repeat:no-repeat;
     background-origin:padding-box;
@@ -533,13 +533,13 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 
 .cartehimg6
 {
-    /*width:95%;*/
+    width:95%;
     height:60%;
     /*border:1px solid black;*/
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
     margin:auto;
-    margin-top:2px;
+    margin-top:2%;
     background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
     background-repeat:no-repeat;
     background-origin:padding-box;
@@ -580,6 +580,7 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     margin-top:0px;
     margin-bottom:0px;
     margin-left:10px;
+    color:darkgrey;
 }
 
 
@@ -642,19 +643,33 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     margin-right:5%;
     justify-content:flex-start;
     height:190px;
-    border-radius:10px;
+    border-radius:20px;
     overflow:hidden;
 }
 
 .descrimgp
 {
     margin-left: 5%;
+    position:relative;
 }
 
-.descrimgp p:first-child
+.descrimgp1
 {
     font-weight:bolder;
+    margin-bottom:0px;
 }
+
+.descrimgp2
+{
+    font-weight:bolder;
+    margin-top:0px;
+}
+
+.descrimgpprix
+{
+    color:darkgray;
+}
+
 
 /******************************************************************************/
 /* 
@@ -663,10 +678,10 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 .cartepimg1
 {
     width:40%;
-    height:96%;
-    border-top-left-radius:10px;
-    border-bottom-left-radius:10px;
-    margin:2px;
+    height:92%;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    margin:2%;
     background-image: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
     background-repeat:no-repeat;
     background-size:cover; 
@@ -674,13 +689,25 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     background-position: 0 0;  
 }
 
+.starp1
+{
+    margin-left:0px;
+    position:absolute;
+    bottom:2%;
+}
+.starp1 .fa-star
+{
+    color:#0065FC;
+    margin-right:1px;
+}
+
 .cartepimg2
 {
     width:40%;
-    height:96%;
-    border-top-left-radius:10px;
-    border-bottom-left-radius:10px;
-    margin:2px;
+    height:92%;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    margin:2%;
     background-image: url("images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
     background-repeat:no-repeat;
     background-size:cover; 
@@ -688,13 +715,30 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     background-position: 0 0;  
 }
 
+.starp2,.starp3
+{
+    margin-left:0px;
+    position:absolute;
+    bottom:2%;
+}
+.starp2 .fa-star,.starp3 .fa-star
+{
+    color:#0065FC;
+    margin-right:1px;
+}
+
+.starp2 .fa-star:nth-child(5), .starp3 .fa-star:nth-child(5)
+{
+    color:rgb(197, 203, 209)
+}
+
 .cartepimg3
 {
     width:40%;
-    height:96%;
-    border-top-left-radius:10px;
-    border-bottom-left-radius:10px;
-    margin:2px;
+    height:92%;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    margin:2%;
     background-image: url("images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
     background-repeat:no-repeat;
     background-size:cover; 
@@ -702,8 +746,9 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     background-position: 0 0;  
 }
 
-
+/***********************************************************************/
 /*    media queries  */
+/***********************************************************************/
 
 @media only screen and (min-width:500px) and (max-width: 959px) 
 {
@@ -743,11 +788,9 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 @media only screen and (max-width: 499px) 
 {
 
- 
 .centre
 {
     width:100%;
-    background-color:burlywood;
     display:flex;
     flex-direction:column-reverse;
     
@@ -767,6 +810,33 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 .populaires
 {
     width:100%;
+    background-color:#f2f2f2;
+    border-radius:0px;
+    margin-left:0%;
+}
+
+.populaire h2
+{
+    font-weight:bolder;
+}
+
+.pavepopulaires
+{
+   height:550px;
+}
+
+.cartep
+{
+    display:flex;
+    flex-direction:row;
+    box-sizing:border-box;
+    background-color: white;
+    margin-left:5%;
+    margin-right:5%;
+    justify-content:flex-start;
+    height:150px;
+    border-radius:20px;
+    overflow:hidden;
 }
 
 .carteh
@@ -775,7 +845,6 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     flex-basis:100%;
     height:250px;
     background-color: white;
-    border:1px solid black;
     margin-right:2.5%;
     margin-left:2.5%;
     border-radius:10px;
