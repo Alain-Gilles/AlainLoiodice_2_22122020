@@ -188,10 +188,47 @@ footer
     color:#0065FC; 
 }
 
+.titre h1
+{
+    margin-bottom:0px;
+}
+
+.titre p
+{
+    color:darkgrey;
+    font-size:110%;
+    margin-top:0px;
+}
+
 .filtres
 {
     padding-bottom:10px;
 }
+
+
+#pinfo
+{
+    font-size:70%;
+    color:darkgrey;
+}
+
+#pinfo .fa-info
+{
+    color:#0065FC;
+    font-size:90%;
+    margin-right:4px;
+    margin-left:0px;
+    border:1px solid darkgrey;
+    border-radius:50%;
+    padding-left:6px;
+    padding-right:6px;
+    padding-top:4px;
+    padding-bottom:4px;
+    text-align:center;
+}
+    
+}
+
 /* media queries pour traiter entete  position menu  */
 
 @media only screen and (max-width: 499px) 
@@ -376,7 +413,7 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     background-repeat:no-repeat;
     background-origin:padding-box;
     background-size:cover;
-    background-position: 0 0;
+    background-position: 0 0;  /*x pos   y pos  */
 
 }
 
@@ -564,7 +601,8 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     height: auto;
     padding:1px 0;
     line-height: 100%;
-    
+    position:absolute;
+    bottom:0px;
 }
 
 .descrimgh p:first-child
@@ -589,6 +627,7 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     display:block;
     width:100%;
     height:100%;
+    position: relative;
 }
 
 /*
@@ -749,6 +788,9 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 /***********************************************************************/
 /*    media queries  */
 /***********************************************************************/
+/**/
+/*  ecran compris entre 500 et 559 px                                 */
+/**/
 
 @media only screen and (min-width:500px) and (max-width: 959px) 
 {
@@ -785,7 +827,11 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 
 }
 
-@media only screen and (max-width: 499px) 
+/**/
+/*  ecran inferieur à 500 px                                 */
+/**/
+
+@media only screen and (max-width: 500px) 
 {
 
 .centre
@@ -799,7 +845,9 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 .hebergement
 {
     width:100%;
-    height:2000px;
+    background-color:white;
+    height:1500px;
+    border:1px solid black;
 }
 
 .pavehebergement
@@ -839,11 +887,17 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     overflow:hidden;
 }
 
+.cartepimg3
+{
+    
+    background-position: 0 -10px;  
+}
+
 .carteh
 {
     box-sizing:border-box;
     flex-basis:100%;
-    height:250px;
+    height:210px;
     background-color: white;
     margin-right:2.5%;
     margin-left:2.5%;
@@ -851,12 +905,18 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     overflow:hidden;
 }
 
-.carteh img
+.cartehimg2
+{
+    
+    background-position: 0 -60px;  
+}
+
+/*.carteh img
 {
     border-top-left-radius:10px;
     border-top-right-radius:10px;
     /*height:60%;*/
-    width:95%; 
+    /*width:95%; 
     margin-left:2%;
     margin-top:-5px;
     display:block;
@@ -865,10 +925,10 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     /* Haut Droite Bas Gauche ( Top Right Bottom Left ) Round idem border radius HG HD BD BG */
     /* creait un masque sur la photo pour n'en afficher q'une partie */
 
-    clip-path:inset(10% 0 25% 0 round 10px 10px 0px 0px);
+    /*clip-path:inset(20% 0 40% 0 round 10px 10px 0px 0px);*/
     
     /***********************/
-}
+/*}*/
 
 .descrimgh
 {
@@ -876,8 +936,13 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     padding:1px 0;
     line-height: 100%;
     margin-top:-30px;
-    
 }
+
+.afficherplus
+{
+    bottom:3%;
+}
+
 
 }
 
