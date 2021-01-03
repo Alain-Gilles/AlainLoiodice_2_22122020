@@ -101,6 +101,8 @@ h1,h2,p,a
 }
 
 }
+/*
+/************ fin medias queries *************************************/
 
 /* paramétrage des largeurs des conteneurs structurant de la page header centre activites footer par rapport au wrapper */
 
@@ -205,12 +207,15 @@ footer
     padding-bottom:10px;
 }
 
+/* Texte plus de 500 logements disponibles en gris clair   */
 
 #pinfo
 {
     font-size:70%;
     color:darkgrey;
 }
+
+/* Trt icone "i" couleur bleu, bordure grise en rond autour icone */
 
 #pinfo .fa-info
 {
@@ -226,24 +231,31 @@ footer
     padding-bottom:4px;
     text-align:center;    
 }
+/**/
+/*  ZOne de recherche ville icone + zone recherche input + bouton rechercher */
+
+/* icone  marqueur de lieu */
 
 .fa-map-marker-alt
 {
     background-color:darkgrey;
-    border-top-left-radius:4px;
-    border-bottom-left-radius:4px;
-    font-size:120%;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    font-size:90%;
     padding:0px;
     padding-left:4px;
 }
 
-
+/* zone input recherche ville */
 
 #recherche-ville
 {
     margin-left:5px;
     padding:5px;
+    border:darkgrey 0.01px solid;
 }
+
+/* traitement du bouton Rechercher */
 
 .bouton
 {
@@ -252,8 +264,10 @@ footer
     line-height:2.1;
     color:white;
     font-weight:bolder;
-    margin-left:-4px;
+    margin-left:-5px;
     border:0;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
 }
     
 /* media queries pour traiter entete  position menu  */
