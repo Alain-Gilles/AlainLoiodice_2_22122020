@@ -269,6 +269,20 @@ footer
     border-top-right-radius:10px;
     border-bottom-right-radius:10px;
 }
+
+/**/
+/* Traitement des filtres  */
+.filtres
+{
+    margin-top:15px;
+}
+
+.filtres fieldset
+{
+    border:0;
+    padding-left:0;
+}
+
     
 /* media queries pour traiter entete  position menu  */
 
