@@ -189,17 +189,23 @@ footer
 {
     color:#0065FC; 
 }
+/**/
+/* trouvez votre hébergement */
 
 .titre h1
 {
     margin-bottom:0px;
 }
 
+/**/
+/* En plein centre ville */
+
 .titre p
 {
-    color:darkgrey;
-    font-size:110%;
+    color:dimgrey;
+    font-size:100%;
     margin-top:0px;
+    margin-left:4px;
 }
 
 .filtres
@@ -211,8 +217,8 @@ footer
 
 #pinfo
 {
-    font-size:70%;
-    color:darkgrey;
+    font-size:80%;
+    color:dimgrey;
 }
 
 /* Trt icone "i" couleur bleu, bordure grise en rond autour icone */
@@ -234,36 +240,41 @@ footer
 /**/
 /*  ZOne de recherche ville icone + zone recherche input + bouton rechercher */
 
+/* form conteneur de la zone recherche complete icone+input+bouton */
+
+.rechercheform
+{
+    margin-bottom:40px;
+}
+
 /* icone  marqueur de lieu */
 
 .fa-map-marker-alt
 {
-    background-color:darkgrey;
+    background-color:lightgrey;
     border-top-left-radius:10px;
     border-bottom-left-radius:10px;
-    font-size:90%;
-    padding:0px;
-    padding-left:4px;
+    padding:13px;
 }
 
 /* zone input recherche ville */
 
-#recherche-ville
+input[name="rechercheville"]
 {
-    margin-left:5px;
-    padding:5px;
-    border:darkgrey 0.01px solid;
+    border:0.1px lightgrey solid;
+    padding:10px;
+    font-weight:bold;
+    font-size:105%;   
+    margin-left:-5px;
 }
 
-/* traitement du bouton Rechercher */
-
-.bouton
+.boutonrecherche
 {
     background-color:#0065FC;
-    padding:0 20px;
-    line-height:2.1;
+    padding:10px 15px 10px 15px;
     color:white;
-    font-weight:bolder;
+    font-weight:bold;
+    font-size:105%;
     margin-left:-5px;
     border:0;
     border-top-right-radius:10px;
@@ -272,9 +283,10 @@ footer
 
 /**/
 /* Traitement des filtres  */
-.filtres
+
+.filtresform
 {
-    margin-top:15px;
+    margin-bottom:0px; 
 }
 
 .filtres fieldset

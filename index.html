@@ -33,24 +33,28 @@
                 <h1>Trouvez votre hébergement pour des vacances de reve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
-            <div class="rechercher">
-                <i class="fas fa-map-marker-alt"><input type="Search" id="recherche-ville" name="q"
-                       placeholder="Rechercher une ville"></i>
-                <button class="bouton">Rechercher</button>
-            </div>
+            <form class="rechercheform">
+                <div class="rechercher">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="rechercheville" name="rechercheville" Value="Marseille,France">   
+                    <button class="boutonrecherche">Rechercher</button>
+                </div>
+            </form>
+            <form class="filtresform">
             <div class="filtres">
                 <fieldset>
                     <label for="filtres">Filtres</label>
                     <i class="fas fa-money-bill-wave"></i>
-                    <input type="button" Value="Economique">
+                    <input id="economique" name="economique" type="button" Value="Economique">
                     <i class="fas fa-child"></i>
-                    <input type="button" Value="Familial">
+                    <input id="familial" name="famillial" type="button" Value="Familial">
                     <i class="fas fa-heart"></i>
-                    <input type="button" Value="Romantique">
+                    <input id="romantique" name="romantique"type="button" Value="Romantique">
                     <i class="fas fa-dog"></i>
-                    <input type="button" Value="Animaux autorisés">
+                    <input id="animaux" name="animaux" type="button" Value="Animaux autorisés">
                 </fieldset>
             </div>
+            </form>
             <p id="pinfo"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
 
         </header>
