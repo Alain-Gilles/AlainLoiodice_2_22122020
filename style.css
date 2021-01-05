@@ -1,16 +1,4 @@
 /**/
-/* 
-suite à réunion avec Dassi , simplification du code , suppression du background-position
- pour traitement des images dans hebergement et les plus populaires.
- On laisse les images s'afficher sans essayer de les recadrer avec background-position.
- Une autre solution aurait été d'utiliser un logiciel de traitement d'images et de les recadrer, mais comme pour 
- le traitement par background-position, si le nombre d'image à traiter était plus important la solution serait difficilement
- envisageable.
-La solution serait que les images soit envoyées dans un format défini.
-*/
-/**/
-
-
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
@@ -60,18 +48,8 @@ a
     font-size:1em;
 }
 /*
-/* definition des carcatéristiques des icones utilisés */
-/*                                                     */
-.fa-info
-{
-    margin-left:20px;
-    color:black;
-    font-size:2em;
-}
-
 /* definition des differentes tailles de polices selon les media queries définis */
 
-/*@media only screen and (max-width: 499px)*/ 
 @media only screen and (max-width: 559px)
 {
  
@@ -86,8 +64,6 @@ p,a
 }
 
 }
-
-/**** Ajout 04/01/2021   16h20  ****/
 
 @media only screen and (min-width:560px) and (max-width: 758px) 
 {
@@ -110,10 +86,6 @@ p,a
 
 }
 
-
-/**** Fin ajout 04/01/2021  16h20 ****/
-
-/*@media only screen and (min-width:500px) and (max-width: 959px)*/ 
 @media only screen and (min-width:759px) and (max-width: 959px) 
 {
 
@@ -285,7 +257,7 @@ footer
     text-align:center;    
 }
 /**/
-/*  ZOne de recherche ville icone + zone recherche input + bouton rechercher */
+/*  Zone de recherche ville icone + zone recherche input + bouton rechercher */
 
 /* form conteneur de la zone recherche complete icone+input+bouton */
 
@@ -314,6 +286,10 @@ input[name="rechercheville"]
     font-size:105%;   
     margin-left:-5px;
 }
+/*
+/* selon la taille de l'ecran on affiche soit bouton recherche avec recherche ou
+avec une loupe. Par defaut on affiche recherche dans bouton recherche */
+/* */
 
 .boutonrecherche
 {
@@ -348,13 +324,17 @@ input[name="rechercheville"]
 }
 
 /**/
+/* definition du texte label "filtres  */
+/**/
 label[for="filtres"]
 {
     margin-right:10px;
     font-size:110%;
     font-weight:bold;
 }
-
+/**/
+/* definitions des icones précédent chaque bouton de filtre */
+/**/
 .fa-money-bill-wave::before, .fa-child::before, .fa-heart::before, .fa-dog::before
 {
     background-color:#deebff;
@@ -365,13 +345,17 @@ label[for="filtres"]
     color:#0065FC;
     font-size:100%;
 }
-
+/**/
+/* definition de la bordure entourant l'cone et le bouton */
+/**/
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
 {
     border:#f2f2f2 4px solid;
     border-radius:25px;
 }
-
+/**/
+/* paramétrage du texte contenu dans le bouton economique familial romantique et animaux */
+/**/
 input[name="economique"], input[name="familial"], input[name="romantique"], input[name="animaux"]
 {
     background-color:white;
@@ -383,9 +367,6 @@ input[name="economique"], input[name="familial"], input[name="romantique"], inpu
     
 /* media queries pour traiter entete  position menu pour petit ecran  */
 
-
-
-/*@media only screen and (max-width: 499px)*/ 
 @media only screen and (max-width: 559px) 
 {
 
@@ -514,7 +495,7 @@ input[name="rechercheville"]
 /* traitement du contener centre qui contient les contener hebergement et populaire */
 
 /* definition des proportions des pavés hebergement et les plus populaires
-à l'interieur du contenaire  70% de largeur pour hebergement et 30% pour populiare */
+à l'interieur du contenaire  68% de largeur pour hebergement et 30% pour populiare 2% margin-left */
 
 .hebergement
 {
@@ -536,9 +517,9 @@ input[name="rechercheville"]
 
 /* Traitement du pavé hebergement. Utilisation de flexbox alignement des elements en ligne avec passage à la ligne si dépassement 
 Les elements sont justifiés avec un espace autour en ligne et chaque ligne est alignée en hauteur avec des espaces autour  
-La hauteur du bloc est fixée à 700px et nous allons donner à chaque élément une hauteur de 300px ce qui permettra d'afficher deux lignes
+La hauteur du bloc est fixée à 600px et nous allons donner à chaque élément une hauteur de 250px ce qui permettra d'afficher deux lignes
 dans le contener flex.
-Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet de mettre trois éléments par ligne.*/
+D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet de mettre trois éléments par ligne.*/
 
 /* definition du contener */
 
@@ -571,8 +552,6 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 .afficherplus
 {
     display:block;
-    /*padding-top:10px;
-    padding-bottom:10px;*/
     margin-left:4%;
     text-decoration: none;
     font-weight:bolder;
@@ -605,7 +584,6 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 {
     width:95%;
     height:60%;
-    /*border:1px solid black;*/
     border-top-left-radius:20px;
     border-top-right-radius:20px;
     margin:auto;
@@ -614,9 +592,11 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     background-repeat:no-repeat;
     background-origin:padding-box;
     background-size:cover;
-    background-position: 0 0;  /*x pos   y pos  */
+    background-position: center;
 
 }
+
+/* Traitement affichage des étoiles */
 
 .starh1
 {
@@ -639,7 +619,6 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 {
     width:95%;
     height:60%;
-    /*border:1px solid black;*/
     border-top-left-radius:20px;
     border-top-right-radius:20px;
     margin:auto;
@@ -648,9 +627,11 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     background-repeat:no-repeat;
     background-origin:padding-box;
     background-size:cover;
-    background-position: 0 0;
+    background-position: center;
 
 }
+
+/* Traitement affichage des étoiles */
 
 .starh2
 {
@@ -668,7 +649,6 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 {
     width:95%;
     height:60%;
-    /*border:1px solid black;*/
     border-top-left-radius:20px;
     border-top-right-radius:20px;
     margin:auto;
@@ -677,9 +657,11 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     background-repeat:no-repeat;
     background-origin:padding-box;
     background-size:cover;
-    background-position: 0 0;
+    background-position: center;
 
 }
+
+/* Traitement affichage des étoiles */
 
 .starh3
 {
@@ -702,7 +684,6 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 {
     width:95%;
     height:60%;
-    /*border:1px solid black;*/
     border-top-left-radius:20px;
     border-top-right-radius:20px;
     margin:auto;
@@ -711,9 +692,11 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     background-repeat:no-repeat;
     background-origin:padding-box;
     background-size:cover;
-    background-position: 0px -30px;
+    background-position:center;
 
 }
+
+/*-- Traitement affichage des étoiles --*/
 
 .starh4
 {
@@ -736,11 +719,11 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 }
 
 /* Auberge le Palmier */
+
 .cartehimg5
 {
     width:95%;
     height:60%;
-    /*border:1px solid black;*/
     border-top-left-radius:20px;
     border-top-right-radius:20px;
     margin:auto;
@@ -749,8 +732,10 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     background-repeat:no-repeat;
     background-origin:padding-box;
     background-size:cover;
-    background-position: 0 0;
+    background-position: center;
 }
+
+/* Traitement affichage des étoiles */
 
 .starh5
 {
@@ -773,7 +758,6 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 {
     width:95%;
     height:60%;
-    /*border:1px solid black;*/
     border-top-left-radius:20px;
     border-top-right-radius:20px;
     margin:auto;
@@ -782,8 +766,10 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     background-repeat:no-repeat;
     background-origin:padding-box;
     background-size:cover;
-    background-position: 0 -130px;
+    background-position:center;
 }
+
+/* Traitement affichage des étoiles */
 
 .starh6
 {
@@ -821,7 +807,9 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     margin-left:10px;
     color:darkgrey;
 }
-
+/**/
+/* chaque carte est entièrement clicable */
+/**/
 
 .carteh a
 {
@@ -833,7 +821,7 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 
 /*
 /* Traitement du pave les plus populaire */
-/*                              */
+/**/
 /* le titre h2 et l'icone chart line de la bibl font awesome sont positionnés dans un contener en flex */
 
 .titrepopulaires
@@ -926,7 +914,7 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     background-repeat:no-repeat;
     background-size:cover; 
     background-origin:padding-box;
-    background-position: 0 0;  
+    background-position:center;  
 }
 
 .starp1
@@ -952,7 +940,7 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     background-repeat:no-repeat;
     background-size:cover; 
     background-origin:padding-box;
-    background-position: 0 0;  
+    background-position:center;  
 }
 
 .starp2,.starp3
@@ -983,17 +971,32 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     background-repeat:no-repeat;
     background-size:cover; 
     background-origin:padding-box;
-    background-position: 0 0;  
+    background-position:center;  
 }
 
 /***********************************************************************/
 /*    media queries  */
 /***********************************************************************/
 /**/
+/* Traitement de la zone filtre pour les écrans < à 910px */
+/* Filtre passe sur une ligne et les boutons de sélection de filtre passent 
+/* en dessous*/
+
+@media only screen and (max-width:909px)
+{
+
+label[for="filtres"]
+{
+    display:block;
+    margin-bottom:20px;
+}    
+
+}
+
+/**/
 /*  ecran compris entre 759 et 959 px                                 */
 /**/
 
-/*@media only screen and (min-width:500px) and (max-width: 959px)*/
 @media only screen and (min-width:759px) and (max-width: 959px) 
 {
 
@@ -1009,29 +1012,11 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     overflow:hidden;
 }
 
-/* Hotel chez Amina */
-
-.cartehimg6
-{
-    width:95%;
-    /*height:60%;*/
-    /*border:1px solid black;*/
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-    margin:auto;
-    margin-top:2px;
-    background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: 0 -80px;
- }
-
-
 }
+/**/
+/* ecran compris entre 560 et 758  */
+/**/
 
-/***** Ajout modification du 04/01/2021  16h20 *****/
-
-/*@media only screen and (min-width:500px) and (max-width: 758px)*/
 @media only screen and (min-width:560px) and (max-width: 758px)  
 {
 
@@ -1047,33 +1032,12 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     overflow:hidden;
 }
 
-/* Hotel chez Amina */
-
-.cartehimg6
-{
-    width:95%;
-    /*height:60%;*/
-    /*border:1px solid black;*/
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-    margin:auto;
-    margin-top:2px;
-    background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: 0 -80px;
- }
-
-
 }
 
-/***** Fin ajout modification du 04/01/2021  16h20  ****/
-
 /**/
-/*  ecran inferieur à 500 px    Affichage sur une colonne                        */
+/*  ecran inferieur à 559 px    Affichage sur une colonne                        */
 /**/
 
-/*@media only screen and (max-width: 499px)*/ 
 @media only screen and (max-width: 559px)
 {
 
@@ -1129,12 +1093,6 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     overflow:hidden;
 }
 
-.cartepimg3
-{
-    
-    background-position: 0 -10px;  
-}
-
 .carteh
 {
     box-sizing:border-box;
@@ -1147,30 +1105,6 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
     overflow:hidden;
 }
 
-.cartehimg2
-{
-    
-    background-position: 0 -60px;  
-}
-
-/*.carteh img
-{
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-    /*height:60%;*/
-    /*width:95%; 
-    margin-left:2%;
-    margin-top:-5px;
-    display:block;
-    margin-bottom:1px;
-    
-    /* Haut Droite Bas Gauche ( Top Right Bottom Left ) Round idem border radius HG HD BD BG */
-    /* creait un masque sur la photo pour n'en afficher q'une partie */
-
-    /*clip-path:inset(20% 0 40% 0 round 10px 10px 0px 0px);*/
-    
-    /***********************/
-/*}*/
 
 .descrimgh
 {
@@ -1187,8 +1121,9 @@ Da'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet 
 
 
 }
-
-/* fin media queries */
+/***************************************************************************/
+/* fin media queries                                                       */
+/***************************************************************************/
 
 .carteap
 {
