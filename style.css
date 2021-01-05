@@ -143,8 +143,7 @@ header
 footer
 {
     width:100%;
-    background-color: moccasin;
-    border:1px solid black;
+    background-color: #f2f2f2;
 }
 
 /* traitement du conteneur entete ********************************************************************/
@@ -1130,20 +1129,28 @@ label[for="filtres"]
     display:flex;
     flex-direction:column;
 }*/
+/***/
+/* Traitement du pave activite */
+/***/
 
+#ancreactivite
+{
+    padding-top:25px;
+    padding-bottom:10px;
+}
 .paveactivites
 {
     width:100%;
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:space-between;
     margin-bottom:10px;
 }
 
 .carteag
 {
     box-sizing:border-box;
-    flex-basis:20%;
+    flex-basis:23%;
     height:300px;
     border-radius:10px;
 }
@@ -1161,6 +1168,12 @@ label[for="filtres"]
     width:100%;
     height:35%;
     margin-bottom:40px;
+}
+
+.carteag1d a, .carteag a
+{
+    Text-decoration:none;
+    color:black;
 }
 
 /* Activite à marseille vieux port */
@@ -1279,27 +1292,36 @@ label[for="filtres"]
 .apropos
 {
     width:28.57%;
-    background-color: sienna;
-    border:1px solid black;
     box-sizing:border-box;
 }
 
 .noshebergements
 {
     width:28.57%;
-    background-color:burlywood;
-    border:1px solid black;
     box-sizing:border-box;
 }
 
 .assistance
 {
     width:28.57%;
-    background-color:chocolate;
-    border:1px solid black;
     box-sizing:border-box;
 }
+.noshebergements ul, .apropos ul, .assistance ul
+{
+    list-style-type:none;
+    padding:0px;
+}
 
+.noshebergements li, .apropos li, .assistance li
+{
+    margin-top:10px;
+}
+
+.apropos a, .noshebergements a, .assistance a
+{
+    color:black;
+    text-decoration:none;
+}
 footer
 {
     display:flex;
