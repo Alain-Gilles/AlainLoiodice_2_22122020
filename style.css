@@ -1,3 +1,16 @@
+/**/
+/* 
+suite à réunion avec Dassi , simplification du code , suppression du background-position
+ pour traitement des images dans hebergement et les plus populaires.
+ On laisse les images s'afficher sans essayer de les recadrer avec background-position.
+ Une autre solution aurait été d'utiliser un logiciel de traitement d'images et de les recadrer, mais comme pour 
+ le traitement par background-position, si le nombre d'image à traiter était plus important la solution serait difficilement
+ envisageable.
+La solution serait que les images soit envoyées dans un format défini.
+*/
+/**/
+
+
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
