@@ -1120,6 +1120,8 @@ label[for="filtres"]
 
 
 }
+
+
 /***************************************************************************/
 /* fin media queries                                                       */
 /***************************************************************************/
@@ -1152,19 +1154,20 @@ label[for="filtres"]
     box-sizing:border-box;
     flex-basis:23%;
     height:300px;
-    border-radius:10px;
 }
 
 .carteag0d
 {
-    box-shadow: 4px 2px 0px #f2f2f2;
+    border-radius:10px;
+    box-shadow: 1px 2px 4px #f2f2f2;
     width:100%;
     height:100%;
 }
 
 .carteag1d
 {
-    box-shadow: 4px 2px 0px #f2f2f2;
+    border-radius:10px;
+    box-shadow: 1px 2px 4px #f2f2f2;
     width:100%;
     height:35%;
     margin-bottom:40px;
@@ -1215,7 +1218,6 @@ label[for="filtres"]
 .carteaimg2
 {
     width:100%;
-    /*height:35%;*/
     height:100%;
     border-top-left-radius:20px;
     border-top-right-radius:20px;
@@ -1233,7 +1235,6 @@ label[for="filtres"]
 .carteaimg3
 {
     width:100%;
-    /*height:35%;*/
     height:100%;
     border-top-left-radius:20px;
     border-top-right-radius:20px;
@@ -1252,7 +1253,6 @@ label[for="filtres"]
 .carteaimg5
 {
     width:100%;
-    /*height:35%;*/
     height:100%;
     border-top-left-radius:20px;
     border-top-right-radius:20px;
@@ -1270,7 +1270,6 @@ label[for="filtres"]
 .carteaimg6
 {
     width:100%;
-    /*height:35%;*/
     height:100%;
     border-top-left-radius:20px;
     border-top-right-radius:20px;
@@ -1288,7 +1287,41 @@ label[for="filtres"]
     margin-left:10px;
     margin-top: 10px;
 }
+/**/
+/** Traitement des medias queries pour pave activite 
+si ecran <799 affichages des activités sur une seule colonne */
+/**/
+@media only screen and (max-width: 799px)
+{
 
+.paveactivites
+{
+    display:flex;
+    flex-direction:column;
+}
+
+.carteag
+{
+    margin-bottom:15px;
+}
+
+.carteag1d
+{
+    height:300px;
+}
+
+.carteaimg2,.carteaimg3,.carteaimg5,.carteaimg6
+{
+    height:85%;
+}
+
+}
+
+
+/*************************************************************/
+/* fin trt medias queries pour pave activite                 */
+/*************************************************************/
+/**/
 .apropos
 {
     width:28.57%;
