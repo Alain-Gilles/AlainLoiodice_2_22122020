@@ -227,11 +227,6 @@ footer
     margin-left:4px;
 }
 
-.filtres
-{
-    padding-bottom:10px;
-}
-
 /* Texte plus de 500 logements disponibles en gris clair   */
 
 #pinfo
@@ -323,15 +318,14 @@ avec une loupe. Par defaut on affiche recherche dans bouton recherche */
     padding-left:0;
 }
 
-/**/
-/* definition du texte label "filtres  */
-/**/
-label[for="filtres"]
+fieldset p
 {
+    display:inline;
     margin-right:10px;
-    font-size:110%;
+    font-size:105%;
     font-weight:bold;
 }
+
 /**/
 /* definitions des icones précédent chaque bouton de filtre */
 /**/
@@ -988,11 +982,10 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 @media only screen and (max-width:909px)
 {
 
-label[for="filtres"]
-{
-    display:block;
-    margin-bottom:20px;
-}    
+    fieldset p
+    {
+        display:block;
+    }   
 
 }
 
