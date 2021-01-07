@@ -142,8 +142,9 @@ header
 
 footer
 {
-    width:100%;
+    width:105%;
     background-color: #f2f2f2;
+    margin-left:-2.5%;
 }
 
 /* traitement du conteneur entete ********************************************************************/
@@ -571,6 +572,7 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     margin-right:2%;
     margin-left:2%;
     border-radius:20px;
+    box-shadow:1px 2px 4px #afaeae;
     overflow:hidden;
     
 }
@@ -871,6 +873,8 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     justify-content:flex-start;
     height:190px;
     border-radius:20px;
+    border:1px solid rgb(243, 239, 239);
+    box-shadow:1px 2px 4px #afaeae;
     overflow:hidden;
 }
 
@@ -1001,14 +1005,14 @@ label[for="filtres"]
 
 .carteh
 {
-    box-sizing:border-box;
+    /*box-sizing:border-box;*/
     flex-basis:40%;
     height:180px;
-    background-color: white;
+    /*background-color: white;*/
     margin-right:2.5%;
     margin-left:2.5%;
     border-radius:10px;
-    overflow:hidden;
+    /*overflow:hidden;*/
 }
 
 }
@@ -1021,14 +1025,14 @@ label[for="filtres"]
 
 .carteh
 {
-    box-sizing:border-box;
+    /*box-sizing:border-box;*/
     flex-basis:45%;
     height:180px;
-    background-color: white;
+    /*background-color: white;*/
     margin-right:2.5%;
     margin-left:2.5%;
     border-radius:10px;
-    overflow:hidden;
+    /*overflow:hidden;*/
 }
 
 }
@@ -1080,28 +1084,28 @@ label[for="filtres"]
 
 .cartep
 {
-    display:flex;
+    /*display:flex;
     flex-direction:row;
     box-sizing:border-box;
     background-color: white;
     margin-left:5%;
     margin-right:5%;
-    justify-content:flex-start;
+    justify-content:flex-start;*/
     height:150px;
-    border-radius:20px;
-    overflow:hidden;
+    /*border-radius:20px;
+    overflow:hidden;*/
 }
 
 .carteh
 {
-    box-sizing:border-box;
+    /*box-sizing:border-box;*/
     flex-basis:100%;
     height:210px;
-    background-color: white;
+    /*background-color: white;*/
     margin-right:2.5%;
     margin-left:2.5%;
     border-radius:10px;
-    overflow:hidden;
+    /*overflow:hidden;*/
 }
 
 
@@ -1126,11 +1130,6 @@ label[for="filtres"]
 /* fin media queries                                                       */
 /***************************************************************************/
 
-/*.carteap
-{
-    display:flex;
-    flex-direction:column;
-}*/
 /***/
 /* Traitement du pave activite */
 /***/
@@ -1159,7 +1158,7 @@ label[for="filtres"]
 .carteag0d
 {
     border-radius:10px;
-    box-shadow: 1px 2px 4px #f2f2f2;
+    box-shadow: 1px 2px 4px #afaeae;
     width:100%;
     height:100%;
 }
@@ -1167,7 +1166,7 @@ label[for="filtres"]
 .carteag1d
 {
     border-radius:10px;
-    box-shadow: 1px 2px 4px #f2f2f2;
+    box-shadow: 1px 2px 4px #afaeae;
     width:100%;
     height:35%;
     margin-bottom:40px;
@@ -1303,16 +1302,23 @@ si ecran <799 affichages des activités sur une seule colonne */
 .carteag
 {
     margin-bottom:15px;
+    height:210px;
 }
 
 .carteag1d
 {
-    height:300px;
+    /*height:300px;*/
+    height:210px;
+}
+
+.carteaimg1, .carteaimg4
+{
+    height:75%;
 }
 
 .carteaimg2,.carteaimg3,.carteaimg5,.carteaimg6
 {
-    height:85%;
+    height:75%;
 }
 
 }
@@ -1326,6 +1332,7 @@ si ecran <799 affichages des activités sur une seule colonne */
 {
     width:28.57%;
     box-sizing:border-box;
+    margin-left:25px;
 }
 
 .noshebergements
@@ -1360,5 +1367,39 @@ footer
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+    margin-top:20px;
+    margin-bottom:20px;
 }
 
+/**/
+/** Traitement des medias queries pour footer 
+si ecran <499 affichages a propos  nos  hebergements assistance sur une seule colonne */
+/**/
+@media only screen and (max-width: 499px)
+{
+
+    footer
+    {
+        display:flex;
+        flex-direction:column;
+    }
+    
+    .apropos
+    {
+        margin-left:20px;
+        width:100%
+    }
+
+    .noshebergements
+    {
+    width:100%;
+    margin-left:20px;
+    }
+
+    .assistance
+    {
+    width:100%;
+    margin-left:20px;
+    }
+
+}
