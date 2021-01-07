@@ -46,15 +46,22 @@
                 <div class="filtres">
                     <fieldset>
                         <p>Filtres</p>
-                        <!--<label for="filtres">Filtres</label>-->
-                        <i class="fas fa-money-bill-wave"><!--</i>-->
-                        <input id="economique" name="economique" type="button" Value="Economique"></i>
-                        <i class="fas fa-child"><!--</i>-->
-                        <input id="familial" name="familial" type="button" Value="Familial"></i>
-                        <i class="fas fa-heart"><!--</i>-->
-                        <input id="romantique" name="romantique" type="button" Value="Romantique"></i>
-                        <i class="fas fa-dog"><!--</i>-->
-                        <input id="animaux" name="animaux" type="button" Value="Animaux autorisés"></i>
+                        <button name="economique" type="submit" onclick="traitement">
+                            <i class="fas fa-money-bill-wave"></i>
+                            Economique
+                        </button>
+                        <button name="familial" type="submit" onclick="traitement">
+                            <i class="fas fa-child"></i>
+                            Familial
+                        </button>
+                        <button name="romantique" type="submit" onclick="traitement">
+                            <i class="fas fa-heart"></i>
+                            Romantique
+                        </button>
+                        <button name="animaux" type="button" onclick="traitement">
+                            <i class="fas fa-dog"></i>
+                            Animaux autorisés
+                        </button>
                     </fieldset>
                 </div>
             </form>

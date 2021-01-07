@@ -318,6 +318,19 @@ avec une loupe. Par defaut on affiche recherche dans bouton recherche */
     padding-left:0;
 }
 
+.filtres button 
+{
+    border: none;
+    border:#f2f2f2 4px solid;
+    border-radius:25px;
+    background-color:white;
+    color: black;
+    padding: 8px 14px;
+    font-size: 105%;
+    font-weight:bold;
+    cursor: pointer;
+}
+
 fieldset p
 {
     display:inline;
@@ -334,31 +347,12 @@ fieldset p
     background-color:#deebff;
     border-radius:100%;
     text-align:center;
-    padding:15px;
-    margin-left:-2px;
+    padding:12px;
+    margin-left:-18px;
     color:#0065FC;
     font-size:100%;
 }
-/**/
-/* definition de la bordure entourant l'cone et le bouton */
-/**/
-.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
-{
-    border:#f2f2f2 4px solid;
-    border-radius:25px;
-}
-/**/
-/* paramétrage du texte contenu dans le bouton economique familial romantique et animaux */
-/**/
-input[name="economique"], input[name="familial"], input[name="romantique"], input[name="animaux"]
-{
-    background-color:white;
-    border:0;
-    padding:10px;
-    font-size:105%;
-    font-weight:bold;
-}
-    
+   
 /* media queries pour traiter entete  position menu pour petit ecran  */
 
 @media only screen and (max-width: 559px) 
