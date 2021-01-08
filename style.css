@@ -184,6 +184,9 @@ footer
     color:black;
     text-decoration: none;
     margin-right:1.5em;
+    transition-property:color,font-size;
+    transition-duration:1s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* hébergement  bordure haute et definition couleur de la police */
@@ -206,7 +209,8 @@ footer
 
 .entmen a:hover
 {
-    color:#0065FC; 
+    color:#0065FC;
+    font-size:120%; 
 }
 /**/
 /* trouvez votre hébergement */
@@ -297,6 +301,17 @@ avec une loupe. Par defaut on affiche recherche dans bouton recherche */
     border:0;
     border-top-right-radius:10px;
     border-bottom-right-radius:10px;
+    cursor: pointer;
+    transition-property:background-color,color,font-size;
+    transition-duration:1s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.boutonrecherche:hover
+{
+    background-color:#f2f2f2;
+    color:black;
+    font-size:120%;
 }
 
 .boutonloupe
@@ -329,6 +344,18 @@ avec une loupe. Par defaut on affiche recherche dans bouton recherche */
     font-size: 105%;
     font-weight:bold;
     cursor: pointer;
+    transition-property:background-color,color,font-size;
+    transition-duration:1s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.filtres button:hover
+{
+  background-color:#0065FC;
+  color:white;
+  font-size:110%;
+  transform:scale(1.25);
+
 }
 
 fieldset p
@@ -352,7 +379,8 @@ fieldset p
     color:#0065FC;
     font-size:100%;
 }
-   
+
+  
 /* media queries pour traiter entete  position menu pour petit ecran  */
 
 @media only screen and (max-width: 559px) 
@@ -465,6 +493,18 @@ input[name="rechercheville"]
     border:0;
     border-top-right-radius:10px;
     border-bottom-right-radius:10px;
+    cursor: pointer;
+    transition-property:background-color,color,font-size;
+    transition-duration:1s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.boutonloupe:hover
+{
+    background-color:white;
+    color:#0065FC;
+    font-size:110%;
+
 }
 
 .boutonrecherche
