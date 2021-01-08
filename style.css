@@ -1082,7 +1082,7 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 {
     width:100%;
     background-color:white;
-    height:1500px;
+    height:1460px;
 }
 
 .pavehebergement
@@ -1145,7 +1145,14 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 
 .afficherplus
 {
-    bottom:3%;
+    bottom:2%;
+}
+
+#ancreactivite
+{
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:-20px;
 }
 
 
@@ -1326,7 +1333,7 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 
 /**/
 /** Traitement des medias queries pour pave activite 
-si ecran <799 affichages des activités sur une seule colonne */
+si ecran <699 affichages des activités sur une seule colonne */
 /**/
 @media only screen and (max-width: 699px)
 {
