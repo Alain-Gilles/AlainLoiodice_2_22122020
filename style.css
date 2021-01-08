@@ -1335,6 +1335,7 @@ si ecran <799 affichages des activités sur une seule colonne */
 {
     display:flex;
     flex-direction:column;
+    height:1400px;
 }
 
 .carteag
