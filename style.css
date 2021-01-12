@@ -305,6 +305,7 @@ avec une loupe. Par defaut on affiche recherche dans bouton recherche */
     transition-property:background-color,color,font-size;
     transition-duration:1s;
     transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    outline: unset;
 }
 
 .boutonrecherche:hover
@@ -317,6 +318,7 @@ avec une loupe. Par defaut on affiche recherche dans bouton recherche */
 .boutonloupe
 {
     display:none;
+    outline: unset;
 }
 
 /**/
@@ -347,6 +349,7 @@ avec une loupe. Par defaut on affiche recherche dans bouton recherche */
     transition-property:background-color,color,font-size;
     transition-duration:1s;
     transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    outline:unset;   
 }
 
 .filtres button:hover
