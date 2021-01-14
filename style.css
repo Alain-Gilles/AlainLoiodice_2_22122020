@@ -50,7 +50,22 @@ a
 /*
 /* definition des differentes tailles de polices selon les media queries définis */
 
-@media only screen and (max-width: 559px)
+@media only screen and (max-width: 315px)
+{
+    h1,h2
+{
+    font-size:100%;
+} 
+
+p,a
+{
+    font-size:100%;
+}
+}
+
+
+
+@media only screen and (min-width:316px)and (max-width: 559px)
 {
  
 h1,h2
@@ -226,7 +241,7 @@ footer
 .titre p
 {
     color:dimgrey;
-    font-size:100%;
+    /*font-size:100%;*/
     margin-top:0px;
     margin-left:4px;
 }
@@ -313,6 +328,7 @@ avec une loupe. Par defaut on affiche recherche dans bouton recherche */
     background-color:#f2f2f2;
     color:black;
     font-size:120%;
+    outline: unset;
 }
 
 .boutonloupe
@@ -383,10 +399,160 @@ fieldset p
     font-size:100%;
 }
 
-  
+/**/  
 /* media queries pour traiter entete  position menu pour petit ecran  */
+/**/
 
-@media only screen and (max-width: 559px) 
+@media only screen and (max-width: 315px)
+{
+
+    .titre h1
+{
+    margin-top:30px;
+}
+
+.entmen
+{
+    display:flex;
+    flex-direction:column;
+}
+
+.entmen ul
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    padding-left:20px;
+}
+
+.entmen ul li:nth-child(3)
+{
+    order:-1;
+}
+
+.entmen a
+{
+    font-size:110%;
+}
+
+/* hebergement */
+
+#lm1
+{
+    border-bottom:1px #0065FC solid;
+    border-top:0px;
+}
+.entmen ul li:nth-child(1)
+{
+    margin-bottom:10px;
+}
+
+/* s inscrire */
+
+#lm3
+{
+    border-bottom:0px;
+    border-top:0px; 
+}
+
+.entmen ul li:nth-child(3)
+{
+    margin-bottom:10px;
+}
+
+.titre
+{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:15px;
+}
+
+.titre h1
+{
+    margin-bottom:0px;
+    margin-top:5px;
+}
+.titre p
+{
+    margin-top:4px;
+    margin-bottom:30px;
+}
+
+.rechercher, .filtres
+
+{
+    margin-left:20px;
+    
+}
+
+.fa-map-marker-alt
+{
+    background-color:#f2f2f2;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    padding:10px;
+}
+
+.rechercheform
+{
+    margin-bottom:20px;
+}
+
+/* zone input recherche ville */
+
+input[name="rechercheville"]
+{
+    border:1px #f2f2f2 solid;
+    padding:8px;
+    font-weight:bold;
+    font-size:90%;   
+    margin-left:-5px;
+    width:140px;
+}
+
+.boutonloupe
+{
+    display:inline;
+    background-color:#0065FC;
+    padding:8px 8px 8px 8px;
+    color:white;
+    font-weight:bold;
+    font-size:90%;
+    margin-left:-5px;
+    border:0;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    cursor: pointer;
+    transition-property:background-color,color,font-size;
+    transition-duration:1s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.boutonloupe:hover
+{
+    background-color:white;
+    color:#0065FC;
+    font-size:100%;
+}
+
+.boutonrecherche
+{
+    display:none;
+}
+
+/**/
+/* Traitement des filtres */
+/**/
+
+.filtres button 
+{
+    font-size: 90%;
+}
+
+
+}
+
+@media only screen and (min-width:316px) and (max-width: 559px) 
 {
 
 .titre h1
@@ -500,14 +666,6 @@ input[name="rechercheville"]
     transition-property:background-color,color,font-size;
     transition-duration:1s;
     transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.boutonloupe:hover
-{
-    background-color:white;
-    color:#0065FC;
-    font-size:110%;
-
 }
 
 .boutonrecherche
@@ -1034,14 +1192,11 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 
 .carteh
 {
-    /*box-sizing:border-box;*/
     flex-basis:40%;
     height:180px;
-    /*background-color: white;*/
     margin-right:2.5%;
     margin-left:2.5%;
     border-radius:10px;
-    /*overflow:hidden;*/
 }
 
 }
@@ -1054,14 +1209,11 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 
 .carteh
 {
-    /*box-sizing:border-box;*/
     flex-basis:45%;
     height:180px;
-    /*background-color: white;*/
     margin-right:2.5%;
     margin-left:2.5%;
     border-radius:10px;
-    /*overflow:hidden;*/
 }
 
 }
@@ -1113,28 +1265,16 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 
 .cartep
 {
-    /*display:flex;
-    flex-direction:row;
-    box-sizing:border-box;
-    background-color: white;
-    margin-left:5%;
-    margin-right:5%;
-    justify-content:flex-start;*/
     height:150px;
-    /*border-radius:20px;
-    overflow:hidden;*/
 }
 
 .carteh
 {
-    /*box-sizing:border-box;*/
     flex-basis:100%;
     height:210px;
-    /*background-color: white;*/
     margin-right:2.5%;
     margin-left:2.5%;
     border-radius:10px;
-    /*overflow:hidden;*/
 }
 
 
@@ -1156,6 +1296,18 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     padding-top:10px;
     padding-bottom:10px;
     margin-top:-20px;
+}
+
+/**/
+/*  ecran inferieur à 316 px                            */
+/**/
+
+@media only screen and (max-width: 315px)
+{
+    .descrimgp2
+    {
+        font-size:90%;
+    }
 }
 
 
@@ -1188,7 +1340,6 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 {
     box-sizing:border-box;
     flex-basis:23%;
-    /*height:300px;*/
 }
 
 .carteag0d
@@ -1197,7 +1348,6 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     box-shadow: 1px 2px 4px #afaeae;
     border:1px solid rgb(243, 239, 239);
     width:100%;
-    /*height:100%;*/
     height:300px;
 }
 
@@ -1207,7 +1357,6 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     border:1px solid rgb(243, 239, 239);
     box-shadow: 1px 2px 4px #afaeae;
     width:100%;
-    /*height:45%;*/
     height:135px;
     margin-bottom:24px;
 }
@@ -1351,7 +1500,6 @@ si ecran <699 affichages des activités sur une seule colonne */
 .carteag
 {
     margin-bottom:15px;
-    /*height:210px;*/
 }
 
 .carteag0d
@@ -1361,8 +1509,7 @@ si ecran <699 affichages des activités sur une seule colonne */
 
 .carteag1d
 {
-   /*height:210px;*/
-   height:200px;
+    height:200px;
 }
 
 .carteaimg1, .carteaimg4
