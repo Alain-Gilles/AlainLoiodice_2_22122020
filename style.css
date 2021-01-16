@@ -308,6 +308,7 @@ input[name="rechercheville"]
     font-weight:bold;
     font-size:105%;   
     margin-left:-5px;
+    outline:unset;
 }
 /*
 /* selon la taille de l'ecran on affiche soit bouton recherche avec recherche ou
