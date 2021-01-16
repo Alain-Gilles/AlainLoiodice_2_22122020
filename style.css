@@ -1,4 +1,3 @@
-/**/
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
@@ -194,7 +193,7 @@ footer
 
 /* Police des éléments du menu , pas de soulignenemnt et marge droite entre chaque élément */
 
-.entmen a
+/*.entmen a
 {
     color:black;
     text-decoration: none;
@@ -202,6 +201,16 @@ footer
     transition-property:color,font-size;
     transition-duration:1s;
     transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}*/
+
+.entmen a
+{
+    color:black;
+    text-decoration: none;
+    margin-right:1.5em;
+    /*transition-property:color,font-size;
+    transition-duration:1s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);*/
 }
 
 /* hébergement  bordure haute et definition couleur de la police */
@@ -222,11 +231,11 @@ footer
 
 /* survole des éléments du menu */
 
-.entmen a:hover
+/*.entmen a:hover
 {
     color:#0065FC;
     font-size:120%; 
-}
+}*/
 /**/
 /* trouvez votre hébergement */
 
@@ -305,7 +314,7 @@ input[name="rechercheville"]
 avec une loupe. Par defaut on affiche recherche dans bouton recherche */
 /* */
 
-.boutonrecherche
+/*.boutonrecherche
 {
     background-color:#0065FC;
     padding:10px 15px 10px 15px;
@@ -321,15 +330,33 @@ avec une loupe. Par defaut on affiche recherche dans bouton recherche */
     transition-duration:1s;
     transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
     outline: unset;
+}*/
+
+.boutonrecherche
+{
+    background-color:#0065FC;
+    padding:10px 15px 10px 15px;
+    color:white;
+    font-weight:bold;
+    font-size:105%;
+    margin-left:-5px;
+    border:0;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    cursor: pointer;
+    /*transition-property:background-color,color,font-size;
+    transition-duration:1s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);*/
+    outline: unset;
 }
 
-.boutonrecherche:hover
+/*.boutonrecherche:hover
 {
     background-color:#f2f2f2;
     color:black;
     font-size:120%;
     outline: unset;
-}
+}*/
 
 .boutonloupe
 {
@@ -351,7 +378,7 @@ avec une loupe. Par defaut on affiche recherche dans bouton recherche */
     padding-left:0;
 }
 
-.filtres button 
+/*.filtres button 
 {
     border: none;
     border:#f2f2f2 4px solid;
@@ -366,16 +393,33 @@ avec une loupe. Par defaut on affiche recherche dans bouton recherche */
     transition-duration:1s;
     transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
     outline:unset;   
+}*/
+
+.filtres button 
+{
+    border: none;
+    border:#f2f2f2 4px solid;
+    border-radius:25px;
+    background-color:white;
+    color: black;
+    padding: 8px 14px;
+    font-size: 105%;
+    font-weight:bold;
+    cursor: pointer;
+    /*transition-property:background-color,color,font-size;
+    transition-duration:1s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);*/
+    outline:unset;   
 }
 
-.filtres button:hover
+/*.filtres button:hover
 {
   background-color:#0065FC;
   color:white;
   font-size:110%;
   transform:scale(1.25);
 
-}
+}*/
 
 fieldset p
 {
@@ -397,6 +441,99 @@ fieldset p
     margin-left:-18px;
     color:#0065FC;
     font-size:100%;
+}
+/**/
+/**  media queries pour traiter hover sur ecran destop uniquement **/
+/**/
+@media only screen and (min-width: 960px) 
+{
+    /* Transition sur survol avec souris */
+
+    .entmen a
+    {
+    color:black;
+    text-decoration: none;
+    margin-right:1.5em;
+    transition-property:color,font-size;
+    transition-duration:1s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    /* survol des éléments du menu */
+
+    .entmen a:hover
+    {
+        color:#0065FC;
+        font-size:120%; 
+    }
+
+    .entmen a:focus
+    {
+        outline:0px;
+    }
+
+    /* Transition sur survol avec souris */
+
+    .boutonrecherche
+    {
+    background-color:#0065FC;
+    padding:10px 15px 10px 15px;
+    color:white;
+    font-weight:bold;
+    font-size:105%;
+    margin-left:-5px;
+    border:0;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    cursor: pointer;
+    transition-property:background-color,color,font-size;
+    transition-duration:1s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    outline: unset;
+    }
+
+    /* survol bouton recherche */
+    
+    .boutonrecherche:hover
+    {
+    background-color:#f2f2f2;
+    color:black;
+    font-size:120%;
+    outline: unset;
+    }
+
+    /* Transition sur survol avec souris */
+
+    .filtres button 
+    {
+    border: none;
+    border:#f2f2f2 4px solid;
+    border-radius:25px;
+    background-color:white;
+    color: black;
+    padding: 8px 14px;
+    font-size: 105%;
+    font-weight:bold;
+    cursor: pointer;
+    transition-property:background-color,color,font-size;
+    transition-duration:1s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    outline:unset;   
+    }
+ 
+    /* animation lors survol boutons filtes */
+
+    .filtres button:hover
+    {
+    background-color:#0065FC;
+    color:white;
+    font-size:110%;
+    transform:scale(1.25);
+    }
+
+
+
+
 }
 
 /**/  
@@ -523,17 +660,17 @@ input[name="rechercheville"]
     border-top-right-radius:10px;
     border-bottom-right-radius:10px;
     cursor: pointer;
-    transition-property:background-color,color,font-size;
+    /*transition-property:background-color,color,font-size;
     transition-duration:1s;
-    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);*/
 }
 
-.boutonloupe:hover
+/*.boutonloupe:hover
 {
     background-color:white;
     color:#0065FC;
     font-size:100%;
-}
+}*/
 
 .boutonrecherche
 {
@@ -663,9 +800,9 @@ input[name="rechercheville"]
     border-top-right-radius:10px;
     border-bottom-right-radius:10px;
     cursor: pointer;
-    transition-property:background-color,color,font-size;
+    /*transition-property:background-color,color,font-size;
     transition-duration:1s;
-    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);*/
 }
 
 .boutonrecherche
