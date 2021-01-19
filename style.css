@@ -4,13 +4,12 @@
     font-weight: normal;
     src: local('Raleway'), url('polices/Raleway-Regular.woff') format('woff');
     src: local('Raleway'), url('polices/Raleway-Regular.ttf') format('ttf');
-    }
+}
     
 /* définitions caractéristiques du Body ( famille de police de caractères, largeur maximale de l'écran
 fixée à 1590px avec marges auto et taille de police fixée à 100% */
 
-body
-{
+body {
     font-family: 'Raleway','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     max-width: 1590px;
     font-size:100%;
@@ -19,143 +18,118 @@ body
 
 /* paramétrage du contener 90% du body et centrage auto */
 
-.wrapper
-{
+.wrapper {
     width:90%;
     margin:0 auto;
 }
 
 /* parametrage des tailles de polices de caractères par défaut*/
 
-h1
-{
+h1 {
     font-size: 1.8em;
 }
 
-h2
-{
+h2 {
     font-size:1.4em;
 }
 
-p
-{
+p {
     font-size:1.0em;
 }
 
-a
-{
+a {
     font-size:1em;
 }
+
 /*
 /* definition des differentes tailles de polices selon les media queries définis */
 
-@media only screen and (max-width: 315px)
-{
-    h1,h2
-{
-    font-size:100%;
-} 
+@media only screen and (max-width: 315px) {
 
-p,a
-{
+h1,h2 {
     font-size:100%;
 }
+
+p,a {
+    font-size:100%;
+}
+
 }
 
 
 
-@media only screen and (min-width:316px)and (max-width: 559px)
-{
- 
-h1,h2
-{
+@media only screen and (min-width:316px)and (max-width: 559px) {
+
+h1,h2 {
     font-size:105%;
-} 
+}
 
-p,a
-{
+p,a {
     font-size:100%;
 }
 
 }
 
-@media only screen and (min-width:560px) and (max-width: 758px) 
-{
+@media only screen and (min-width:560px) and (max-width: 758px) {
 
-    
-    h1,h2
-    {
-        font-size:100%;
-    }
+h1,h2 {
+    font-size:100%;
+}
 
-    p
-    {
-        font-size:85%;
-    }
+p {
+    font-size:85%;
+}
 
-    a
-    {
-        font-size:95%;
-    }
+a {
+    font-size:95%;
+}
 
 }
 
-@media only screen and (min-width:759px) and (max-width: 959px) 
-{
+@media only screen and (min-width:759px) and (max-width: 959px) { 
 
-    
-    h1,h2
-    {
-        font-size:100%;
-    }
+h1,h2 {
+    font-size:100%;
+}
 
-    p
-    {
-        font-size:85%;
-    }
+p {
+    font-size:85%;
+}
 
-    a
-    {
-        font-size:95%;
-    }
+a {
+    font-size:95%;
+}
 
 }
 
+@media only screen and (min-width: 960px) {
 
-@media only screen and (min-width: 960px) 
-{
-h1,h2,p,a
-{
+h1,h2,p,a {
     font-size:100%;
 }
 
 }
-
 
 /*
 /************ fin medias queries *************************************/
 
 /* paramétrage des largeurs des conteneurs structurant de la page header centre activites footer par rapport au wrapper */
 
-header
-{
+header {
     width:100%;
 }
 
-.centre
-{
+.centre {
     width:100%;
     display:flex;
     flex-direction:row;
 }
 
-.activites
-{
+.activites {
     width:100%;
 }
 
-footer
-{
+footer {
     width:105%;
     background-color: #f2f2f2;
     margin-left:-2.5%;
@@ -165,8 +139,7 @@ footer
 
 /* logo reservia definition de la largeur , image étant en svg le logo sera proportionnel en hauteur */
 
-.logreservia
-{
+.logreservia {
     width:8em;
 }
 
@@ -174,8 +147,7 @@ footer
 
 /* le logo et le menu sont positioonés sur la même ligne */
 
-.entmen
-{
+.entmen {
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -184,8 +156,7 @@ footer
 
 /* le menu est positionné en ligne, suppression des points sur les éléments du menu */
 
-.entmen ul
-{
+.entmen ul {
     display:flex;
     flex-direction:row;
     list-style-type: none;
@@ -193,8 +164,7 @@ footer
 
 /* Police des éléments du menu , pas de soulignenemnt et marge droite entre chaque élément */
 
-.entmen a
-{
+.entmen a {
     color:black;
     text-decoration: none;
     margin-right:1.5em;
@@ -202,8 +172,7 @@ footer
 
 /* hébergement  bordure haute et definition couleur de la police */
 
-#lm1
-{
+#lm1 {
     border-top:2px #0065FC solid;
     padding-top:20px;
     color:#0065FC;
@@ -211,23 +180,20 @@ footer
 
 /* s inscrire  definition couleur de la police */
 
-#lm3
-{
+#lm3 {
     color:#0065FC;
 }
 
 /* trouvez votre hébergement */
 
-.titre h1
-{
+.titre h1 {
     margin-bottom:0px;
 }
 
 /**/
 /* En plein centre ville */
 
-.titre p
-{
+.titre p {
     color:dimgrey;
     margin-top:0px;
     margin-left:4px;
@@ -235,16 +201,14 @@ footer
 
 /* Texte plus de 500 logements disponibles en gris clair   */
 
-#pinfo
-{
+#pinfo {
     font-size:80%;
     color:dimgrey;
 }
 
 /* Trt icone "i" couleur bleu, bordure grise en rond autour icone */
 
-#pinfo .fa-info
-{
+#pinfo .fa-info {
     color:#0065FC;
     font-size:90%;
     margin-right:4px;
@@ -257,20 +221,19 @@ footer
     padding-bottom:4px;
     text-align:center;    
 }
+
 /**/
 /*  Zone de recherche ville icone + zone recherche input + bouton rechercher */
 
 /* form conteneur de la zone recherche complete icone+input+bouton */
 
-.rechercheform
-{
+.rechercheform {
     margin-bottom:40px;
 }
 
 /* icone  marqueur de lieu */
 
-.fa-map-marker-alt
-{
+.fa-map-marker-alt {
     background-color:#f2f2f2;
     border-top-left-radius:10px;
     border-bottom-left-radius:10px;
@@ -279,8 +242,7 @@ footer
 
 /* zone input recherche ville */
 
-input[name="rechercheville"]
-{
+input[name="rechercheville"] {
     border:1px #f2f2f2 solid;
     padding:10px;
     font-weight:bold;
@@ -294,8 +256,7 @@ input[name="rechercheville"]
 avec une loupe. Par defaut on affiche recherche dans bouton recherche */
 /* */
 
-.boutonrecherche
-{
+.boutonrecherche {
     background-color:#0065FC;
     padding:10px 15px 10px 15px;
     color:white;
@@ -308,8 +269,7 @@ avec une loupe. Par defaut on affiche recherche dans bouton recherche */
     cursor: pointer;
 }
 
-.boutonloupe
-{
+.boutonloupe {
     display:none;
     outline: unset;
 }
@@ -317,19 +277,16 @@ avec une loupe. Par defaut on affiche recherche dans bouton recherche */
 /**/
 /* Traitement des filtres  */
 
-.filtresform
-{
+.filtresform {
     margin-bottom:0px; 
 }
 
-.filtres fieldset
-{
+.filtres fieldset {
     border:0;
     padding-left:0;
 }
 
-.filtres button 
-{
+.filtres button {
     border: none;
     border:#f2f2f2 4px solid;
     border-radius:25px;
@@ -342,8 +299,7 @@ avec une loupe. Par defaut on affiche recherche dans bouton recherche */
     outline:unset;   
 }
 
-fieldset p
-{
+fieldset p {
     display:inline;
     margin-right:10px;
     font-size:105%;
@@ -353,8 +309,8 @@ fieldset p
 /**/
 /* definitions des icones précédent chaque bouton de filtre */
 /**/
-.fa-money-bill-wave::before, .fa-child::before, .fa-heart::before, .fa-dog::before
-{
+
+.fa-money-bill-wave::before, .fa-child::before, .fa-heart::before, .fa-dog::before {
     background-color:#deebff;
     border-radius:100%;
     text-align:center;
@@ -363,40 +319,38 @@ fieldset p
     color:#0065FC;
     font-size:100%;
 }
+
 /**/
 /**  media queries pour traiter hover sur ecran destop uniquement **/
 /**/
-@media only screen and (min-width: 960px) 
-{
+
+@media only screen and (min-width: 960px) {
+
     /* Transition sur survol avec souris */
 
-    .entmen a
-    {
+.entmen a {
     color:black;
     text-decoration: none;
     margin-right:1.5em;
     transition-property:color,font-size;
     transition-duration:1s;
     transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
+}
 
     /* survol des éléments du menu */
 
-    .entmen a:hover
-    {
-        color:#0065FC;
-        font-size:120%; 
-    }
+.entmen a:hover {
+    color:#0065FC;
+    font-size:120%; 
+}
 
-    .entmen a:focus
-    {
-        outline:0px;
-    }
+.entmen a:focus {
+    outline:0px;
+}
 
     /* Transition sur survol avec souris */
 
-    .boutonrecherche
-    {
+.boutonrecherche {
     background-color:#0065FC;
     padding:10px 15px 10px 15px;
     color:white;
@@ -411,22 +365,20 @@ fieldset p
     transition-duration:1s;
     transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
     outline: unset;
-    }
+}
 
     /* survol bouton recherche */
     
-    .boutonrecherche:hover
-    {
+.boutonrecherche:hover {
     background-color:#f2f2f2;
     color:black;
     font-size:120%;
     outline: unset;
-    }
+}
 
     /* Transition sur survol avec souris */
 
-    .filtres button 
-    {
+.filtres button {
     border: none;
     border:#f2f2f2 4px solid;
     border-radius:25px;
@@ -440,20 +392,16 @@ fieldset p
     transition-duration:1s;
     transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
     outline:unset;   
-    }
+}
  
     /* animation lors survol boutons filtes */
 
-    .filtres button:hover
-    {
+.filtres button:hover {
     background-color:#0065FC;
     color:white;
     font-size:110%;
     transform:scale(1.25);
-    }
-
-
-
+}
 
 }
 
@@ -461,105 +409,89 @@ fieldset p
 /* media queries pour traiter entete  position menu pour petit ecran  */
 /**/
 
-@media only screen and (max-width: 315px)
-{
+@media only screen and (max-width: 315px) {
 
-    .titre h1
-{
+.titre h1 {
     margin-top:30px;
 }
 
-.entmen
-{
+.entmen {
     display:flex;
     flex-direction:column;
 }
 
-.entmen ul
-{
+.entmen ul {
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
     padding-left:20px;
 }
 
-.entmen ul li:nth-child(3)
-{
+.entmen ul li:nth-child(3) {
     order:-1;
 }
 
-.entmen a
-{
+.entmen a {
     font-size:110%;
 }
 
 /* hebergement */
 
-#lm1
-{
+#lm1 {
     border-bottom:1px #0065FC solid;
     border-top:0px;
 }
-.entmen ul li:nth-child(1)
-{
+
+.entmen ul li:nth-child(1) {
     margin-bottom:10px;
 }
 
 /* s inscrire */
 
-#lm3
-{
+#lm3 {
     border-bottom:0px;
     border-top:0px; 
 }
 
-.entmen ul li:nth-child(3)
-{
+.entmen ul li:nth-child(3) {
     margin-bottom:10px;
 }
 
-.titre
-{
+.titre {
     padding-left:20px;
     padding-right:20px;
     padding-top:15px;
 }
 
-.titre h1
-{
+.titre h1 {
     margin-bottom:0px;
     margin-top:5px;
 }
-.titre p
-{
+
+.titre p {
     margin-top:4px;
     margin-bottom:30px;
 }
 
-.rechercher, .filtres
-
-{
+.rechercher, .filtres {
     margin-left:20px;
     
 }
 
-.fa-map-marker-alt
-{
+.fa-map-marker-alt {
     background-color:#f2f2f2;
     border-top-left-radius:10px;
     border-bottom-left-radius:10px;
     padding:10px;
 }
 
-.rechercheform
-{
+.rechercheform {
     margin-bottom:20px;
 }
 
 /* zone input recherche ville */
 
-input[name="rechercheville"]
-{
+input[name="rechercheville"] {
     border:1px #f2f2f2 solid;
     padding:8px;
     font-weight:bold;
@@ -568,8 +500,7 @@ input[name="rechercheville"]
     width:140px;
 }
 
-.boutonloupe
-{
+.boutonloupe {
     display:inline;
     background-color:#0065FC;
     padding:8px 8px 8px 8px;
@@ -583,8 +514,7 @@ input[name="rechercheville"]
     cursor: pointer;
 }
 
-.boutonrecherche
-{
+.boutonrecherche {
     display:none;
 }
 
@@ -592,43 +522,34 @@ input[name="rechercheville"]
 /* Traitement des filtres */
 /**/
 
-.filtres button 
-{
+.filtres button {
     font-size: 90%;
 }
 
-
 }
 
-@media only screen and (min-width:316px) and (max-width: 559px) 
-{
+@media only screen and (min-width:316px) and (max-width: 559px) {
 
-.titre h1
-{
+.titre h1 {
     margin-top:30px;
 }
 
-.entmen
-{
+.entmen {
     display:block;
     position:relative;
 }
 
-.entmen img
-{
+.entmen img {
     display:block;
 }    
 
-.entmen ul
-{
+.entmen ul {
     display:block;
 }
 
-
 /* hebergement */
 
-#lm1
-{
+#lm1 {
     position:absolute;
     top:60px;
     left:20px;
@@ -639,8 +560,7 @@ input[name="rechercheville"]
 
 /* activite */
 
-#lm2
-{
+#lm2 {
     position:absolute;
     top:80px;
     right:50px;
@@ -648,38 +568,30 @@ input[name="rechercheville"]
 
 /* s inscrire */
 
-#lm3
-{
+#lm3 {
     position:absolute;
     top:24px;
     right:0px;
 }
 
-.titre
-{
+.titre {
     padding-left:20px;
     padding-right:20px;
     padding-top:15px;
 }
 
-.titre h1
-{
+.titre h1 {
     margin-bottom:0px;
 }
-.titre p
-{
+.titre p {
     margin-top:4px;
 }
 
-.rechercher, .filtres
-
-{
-    margin-left:20px;
-    
+.rechercher, .filtres {
+    margin-left:20px;    
 }
 
-.fa-map-marker-alt
-{
+.fa-map-marker-alt {
     background-color:#f2f2f2;
     border-top-left-radius:10px;
     border-bottom-left-radius:10px;
@@ -688,8 +600,7 @@ input[name="rechercheville"]
 
 /* zone input recherche ville */
 
-input[name="rechercheville"]
-{
+input[name="rechercheville"] {
     border:1px #f2f2f2 solid;
     padding:10px;
     font-weight:bold;
@@ -698,8 +609,7 @@ input[name="rechercheville"]
     width:170px;
 }
 
-.boutonloupe
-{
+.boutonloupe {
     display:inline;
     background-color:#0065FC;
     padding:10px 10px 10px 10px;
@@ -713,12 +623,9 @@ input[name="rechercheville"]
     cursor: pointer;
 }
 
-.boutonrecherche
-{
+.boutonrecherche {
     display:none;
 }
-
-/***************/
 
 }
 
@@ -731,18 +638,14 @@ input[name="rechercheville"]
 /* definition des proportions des pavés hebergement et les plus populaires
 à l'interieur du contenaire  68% de largeur pour hebergement et 30% pour populiare 2% margin-left */
 
-.hebergement
-{
+.hebergement {
     width:68%;
     background-color: #f2f2f2;
     border-radius:20px;
-    position:relative;
-   
-    
+    position:relative;    
 }
 
-.populaires
-{
+.populaires {
     width:30%;
     background-color: #f2f2f2;
     border-radius:20px;
@@ -757,8 +660,7 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 
 /* definition du contener */
 
-.pavehebergement
-{
+.pavehebergement {
     box-sizing:border-box;
     width:100%;
     margin-right:0%;
@@ -771,19 +673,16 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     height:600px;
 }
 
-.hebergement h2
-{
+.hebergement h2 {
     margin-left:2.5%;
 }
 
-.pavehebergement a
-{
+.pavehebergement a {
     text-decoration:none;
     color:black;
 }
 
-.afficherplus
-{
+.afficherplus {
     display:block;
     margin-left:4%;
     text-decoration: none;
@@ -795,8 +694,7 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 
 /* definition des elements (items) */
 
-.carteh
-{
+.carteh {
     box-sizing:border-box;
     flex-basis:28.3%;
     height:250px;
@@ -806,16 +704,14 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     margin-left:2%;
     border-radius:20px;
     box-shadow:1px 2px 4px #afaeae;
-    overflow:hidden;
-    
+    overflow:hidden;    
 }
 
 /******************************************************************************/
 /* 
 /* Auberge Cannebiere */
                                                                             
-.cartehimg1
-{
+.cartehimg1 {
     width:95%;
     height:60%;
     border-top-left-radius:20px;
@@ -827,30 +723,26 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     background-origin:padding-box;
     background-size:cover;
     background-position: center;
-
 }
 
 /* Traitement affichage des étoiles */
 
-.starh1
-{
+.starh1 {
     margin-left:10px;
 }
-.starh1 .fa-star
-{
+
+.starh1 .fa-star {
     color:#0065FC;
     margin-right:1px;
 }
 
-.starh1 .fa-star:nth-child(5)
-{
+.starh1 .fa-star:nth-child(5) {
     color:rgb(197, 203, 209)
 }
 
 /* Hotel du port */
 
-.cartehimg2
-{
+.cartehimg2 {
     width:95%;
     height:60%;
     border-top-left-radius:20px;
@@ -862,25 +754,22 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     background-origin:padding-box;
     background-size:cover;
     background-position: center;
-
 }
 
 /* Traitement affichage des étoiles */
 
-.starh2
-{
+.starh2 {
     margin-left:10px;
 }
-.starh2 .fa-star
-{
+
+.starh2 .fa-star {
     color:#0065FC;
     margin-right:1px;
 }
 
 /* Hotel les mouettes */
 
-.cartehimg3
-{
+.cartehimg3 {
     width:95%;
     height:60%;
     border-top-left-radius:20px;
@@ -892,30 +781,26 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     background-origin:padding-box;
     background-size:cover;
     background-position: center;
-
 }
 
 /* Traitement affichage des étoiles */
 
-.starh3
-{
+.starh3 {
     margin-left:10px;
 }
-.starh3 .fa-star
-{
+
+.starh3 .fa-star {
     color:#0065FC;
     margin-right:1px;
 }
 
-.starh3 .fa-star:nth-child(5)
-{
+.starh3 .fa-star:nth-child(5) {
     color:rgb(197, 203, 209)
 }
 
 /* Hotel de la Mer */
 
-.cartehimg4
-{
+.cartehimg4 {
     width:95%;
     height:60%;
     border-top-left-radius:20px;
@@ -927,35 +812,30 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     background-origin:padding-box;
     background-size:cover;
     background-position:center;
-
 }
 
 /*-- Traitement affichage des étoiles --*/
 
-.starh4
-{
+.starh4 {
     margin-left:10px;
 }
-.starh4 .fa-star
-{
+
+.starh4 .fa-star {
     color:#0065FC;
     margin-right:1px;
 }
 
-.starh4 .fa-star:nth-child(4)
-{
+.starh4 .fa-star:nth-child(4) {
     color:rgb(197, 203, 209)
 }
 
-.starh4 .fa-star:nth-child(5)
-{
+.starh4 .fa-star:nth-child(5) {
     color:rgb(197, 203, 209)
 }
 
 /* Auberge le Palmier */
 
-.cartehimg5
-{
+.cartehimg5 {
     width:95%;
     height:60%;
     border-top-left-radius:20px;
@@ -971,25 +851,22 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 
 /* Traitement affichage des étoiles */
 
-.starh5
-{
+.starh5 {
     margin-left:10px;
 }
-.starh5 .fa-star
-{
+
+.starh5 .fa-star {
     color:#0065FC;
     margin-right:1px;
 }
 
-.starh5 .fa-star:nth-child(5)
-{
+.starh5 .fa-star:nth-child(5) {
     color:rgb(197, 203, 209)
 }
 
 /* Hotel chez Amina */
 
-.cartehimg6
-{
+.cartehimg6 {
     width:95%;
     height:60%;
     border-top-left-radius:20px;
@@ -1005,20 +882,17 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 
 /* Traitement affichage des étoiles */
 
-.starh6
-{
+.starh6 {
     margin-left:10px;
 }
-.starh6 .fa-star
-{
+.starh6 .fa-star {
     color:#0065FC;
     margin-right:1px;
 }
 
 /* pave traitant le contenu sous l'image nom de l'image, prix de la nuité...*/
 
-.descrimgh
-{
+.descrimgh {
     height: auto;
     padding:1px 0;
     line-height: 100%;
@@ -1026,27 +900,25 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     bottom:0px;
 }
 
-.descrimgh p:first-child
-{
+.descrimgh p:first-child {
     margin-top:10px;
     margin-left:10px;
     margin-bottom:0px;
     font-weight:bolder;
 }
 
-.descrimgh p:nth-child(2)
-{
+.descrimgh p:nth-child(2) {
     margin-top:0px;
     margin-bottom:0px;
     margin-left:10px;
     color:darkgrey;
 }
+
 /**/
 /* chaque carte est entièrement clicable */
 /**/
 
-.carteh a
-{
+.carteh a {
     display:block;
     width:100%;
     height:100%;
@@ -1058,8 +930,7 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 /**/
 /* le titre h2 et l'icone chart line de la bibl font awesome sont positionnés dans un contener en flex */
 
-.titrepopulaires
-{
+.titrepopulaires {
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -1068,16 +939,13 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     margin-right:5%;
 }
 
-.fa-chart-line
-{
-    color:black;
-    
+.fa-chart-line {
+    color:black;    
 }
 
 /* Traitements du contener contenant les trois cartes descriptives du pave les plus populaire */
 
-.pavepopulaires
-{
+.pavepopulaires {
     box-sizing:border-box;
     width:100%;
     display:flex;
@@ -1087,16 +955,14 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     padding-top:5px;
 }
 
-.pavepopulaires a
-{
+.pavepopulaires a {
     Text-decoration:none;
     color:black;
 }
 
 /* definition des elements (items) */
 
-.cartep
-{
+.cartep {
     display:flex;
     flex-direction:row;
     box-sizing:border-box;
@@ -1111,26 +977,22 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     overflow:hidden;
 }
 
-.descrimgp
-{
+.descrimgp {
     margin-left: 5%;
     position:relative;
 }
 
-.descrimgp1
-{
+.descrimgp1 {
     font-weight:bolder;
     margin-bottom:0px;
 }
 
-.descrimgp2
-{
+.descrimgp2 {
     font-weight:bolder;
     margin-top:0px;
 }
 
-.descrimgpprix
-{
+.descrimgpprix {
     color:darkgray;
 }
 
@@ -1139,8 +1001,7 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 /* 
 /* Hotel le soleil du matin */
                                                                             
-.cartepimg1
-{
+.cartepimg1 {
     width:40%;
     height:92%;
     border-top-left-radius:20px;
@@ -1153,20 +1014,18 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     background-position:center;  
 }
 
-.starp1
-{
+.starp1 {
     margin-left:0px;
     position:absolute;
     bottom:2%;
 }
-.starp1 .fa-star
-{
+
+.starp1 .fa-star {
     color:#0065FC;
     margin-right:1px;
 }
 
-.cartepimg2
-{
+.cartepimg2 {
     width:40%;
     height:92%;
     border-top-left-radius:20px;
@@ -1179,25 +1038,22 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     background-position:center;  
 }
 
-.starp2,.starp3
-{
+.starp2,.starp3 {
     margin-left:0px;
     position:absolute;
     bottom:2%;
 }
-.starp2 .fa-star,.starp3 .fa-star
-{
+
+.starp2 .fa-star,.starp3 .fa-star {
     color:#0065FC;
     margin-right:1px;
 }
 
-.starp2 .fa-star:nth-child(5), .starp3 .fa-star:nth-child(5)
-{
+.starp2 .fa-star:nth-child(5), .starp3 .fa-star:nth-child(5) {
     color:rgb(197, 203, 209)
 }
 
-.cartepimg3
-{
+.cartepimg3 {
     width:40%;
     height:92%;
     border-top-left-radius:20px;
@@ -1218,12 +1074,10 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 /* Filtre passe sur une ligne et les boutons de sélection de filtre passent 
 /* en dessous*/
 
-@media only screen and (max-width:909px)
-{
+@media only screen and (max-width:909px) {
 
-    fieldset p
-    {
-        display:block;
+fieldset p     {
+    display:block;
     }   
 
 }
@@ -1232,11 +1086,9 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 /*  ecran compris entre 759 et 959 px                                 */
 /**/
 
-@media only screen and (min-width:759px) and (max-width: 959px) 
-{
+@media only screen and (min-width:759px) and (max-width: 959px) {
 
-.carteh
-{
+.carteh {
     flex-basis:40%;
     height:180px;
     margin-right:2.5%;
@@ -1245,15 +1097,14 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 }
 
 }
+
 /**/
 /* ecran compris entre 560 et 758  */
 /**/
 
-@media only screen and (min-width:560px) and (max-width: 758px)  
-{
+@media only screen and (min-width:560px) and (max-width: 758px) {
 
-.carteh
-{
+.carteh {
     flex-basis:45%;
     height:180px;
     margin-right:2.5%;
@@ -1267,54 +1118,44 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 /*  ecran inferieur à 559 px    Affichage sur une colonne                        */
 /**/
 
-@media only screen and (max-width: 559px)
-{
+@media only screen and (max-width: 559px) {
 
-.centre
-{
+.centre {
     width:100%;
     display:flex;
-    flex-direction:column-reverse;
-    
+    flex-direction:column-reverse;    
 } 
 
-.hebergement
-{
+.hebergement {
     width:100%;
     background-color:white;
     height:1460px;
 }
 
-.pavehebergement
-{
+.pavehebergement {
     height:90%;
 }
 
-.populaires
-{
+.populaires {
     width:100%;
     background-color:#f2f2f2;
     border-radius:0px;
     margin-left:0%;
 }
 
-.populaire h2
-{
+.populaire h2 {
     font-weight:bolder;
 }
 
-.pavepopulaires
-{
+.pavepopulaires {
    height:550px;
 }
 
-.cartep
-{
+.cartep {
     height:150px;
 }
 
-.carteh
-{
+.carteh {
     flex-basis:100%;
     height:210px;
     margin-right:2.5%;
@@ -1322,39 +1163,34 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     border-radius:10px;
 }
 
-
-.descrimgh
-{
+.descrimgh {
     height: auto;
     padding:1px 0;
     line-height: 100%;
     margin-top:-30px;
 }
 
-.afficherplus
-{
+.afficherplus {
     bottom:2%;
 }
 
-#ancreactivite
-{
+#ancreactivite {
     padding-top:10px;
     padding-bottom:10px;
     margin-top:-20px;
+}
+
 }
 
 /**/
 /*  ecran inferieur à 316 px                            */
 /**/
 
-@media only screen and (max-width: 315px)
-{
-    .descrimgp2
-    {
-        font-size:90%;
-    }
-}
+@media only screen and (max-width: 315px) {
 
+.descrimgp2 {
+    font-size:90%;
+    }
 
 }
 
@@ -1367,13 +1203,12 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 /* Traitement du pave activite */
 /***/
 
-#ancreactivite
-{
+#ancreactivite {
     padding-top:25px;
     padding-bottom:10px;
 }
-.paveactivites
-{
+
+.paveactivites {
     width:100%;
     display:flex;
     flex-direction:row;
@@ -1381,14 +1216,12 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     margin-bottom:10px;
 }
 
-.carteag
-{
+.carteag {
     box-sizing:border-box;
     flex-basis:23%;
 }
 
-.carteag0d
-{
+.carteag0d {
     border-radius:10px;
     box-shadow: 1px 2px 4px #afaeae;
     border:1px solid rgb(243, 239, 239);
@@ -1396,8 +1229,7 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     height:300px;
 }
 
-.carteag1d
-{
+.carteag1d {
     border-radius:10px;
     border:1px solid rgb(243, 239, 239);
     box-shadow: 1px 2px 4px #afaeae;
@@ -1406,16 +1238,14 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     margin-bottom:24px;
 }
 
-.carteag1d a, .carteag a
-{
+.carteag1d a, .carteag a {
     Text-decoration:none;
     color:black;
 }
 
 /* Activite à marseille vieux port */
 
-.carteaimg1
-{
+.carteaimg1 {
     width:100%;
     height:85%;
     border-top-left-radius:20px;
@@ -1431,8 +1261,7 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 
 /* Activite à marseille parc national des calanques */
 
-.carteaimg4
-{
+.carteaimg4 {
     width:100%;
     height:85%;
     border-top-left-radius:20px;
@@ -1448,8 +1277,7 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 
 /* activites fort de pomegues */
 
-.carteaimg2
-{
+.carteaimg2 {
     width:100%;
     height:80%;
     border-top-left-radius:20px;
@@ -1465,8 +1293,7 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 
 /* activite iles du Frioul  */
 
-.carteaimg3
-{
+.carteaimg3 {
     width:100%;
     height:80%;
     border-top-left-radius:20px;
@@ -1483,8 +1310,7 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 
 /* activites notre dame de la garde */
 
-.carteaimg5
-{
+.carteaimg5 {
     width:100%;
     height:80%;
     border-top-left-radius:20px;
@@ -1500,8 +1326,7 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 
 /* activite parc longchamp  */
 
-.carteaimg6
-{
+.carteaimg6 {
     width:100%;
     height:80%;
     border-top-left-radius:20px;
@@ -1515,14 +1340,12 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
     background-position:center;
 }
 
-.descrimga
-{
+.descrimga {
     margin-left:10px;
     margin-top: 10px;
 }
 
-.descrimga1
-{
+.descrimga1 {
     margin-left:10px;
     margin-top: 5px;
 }
@@ -1532,38 +1355,32 @@ D'autre part chaque elment est défini avec une largeur de 28.3% ce qui permet d
 /** Traitement des medias queries pour pave activite 
 si ecran <699 affichages des activités sur une seule colonne */
 /**/
-@media only screen and (max-width: 699px)
-{
 
-.paveactivites
-{
+@media only screen and (max-width: 699px) {
+
+.paveactivites {
     display:flex;
     flex-direction:column;
     height:1400px;
 }
 
-.carteag
-{
+.carteag {
     margin-bottom:15px;
 }
 
-.carteag0d
-{
+.carteag0d {
     height:200px;
 }
 
-.carteag1d
-{
+.carteag1d {
     height:200px;
 }
 
-.carteaimg1, .carteaimg4
-{
+.carteaimg1, .carteaimg4 {
     height:75%;
 }
 
-.carteaimg2,.carteaimg3,.carteaimg5,.carteaimg6
-{
+.carteaimg2,.carteaimg3,.carteaimg5,.carteaimg6 {
     height:75%;
 }
 
@@ -1574,42 +1391,38 @@ si ecran <699 affichages des activités sur une seule colonne */
 /* fin trt medias queries pour pave activite                 */
 /*************************************************************/
 /**/
-.apropos
-{
+
+.apropos {
     width:28.57%;
     box-sizing:border-box;
     margin-left:25px;
 }
 
-.noshebergements
-{
+.noshebergements {
     width:28.57%;
     box-sizing:border-box;
 }
 
-.assistance
-{
+.assistance {
     width:28.57%;
     box-sizing:border-box;
 }
-.noshebergements ul, .apropos ul, .assistance ul
-{
+
+.noshebergements ul, .apropos ul, .assistance ul {
     list-style-type:none;
     padding:0px;
 }
 
-.noshebergements li, .apropos li, .assistance li
-{
+.noshebergements li, .apropos li, .assistance li {
     margin-top:10px;
 }
 
-.apropos a, .noshebergements a, .assistance a
-{
+.apropos a, .noshebergements a, .assistance a {
     color:black;
     text-decoration:none;
 }
-footer
-{
+
+footer {
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -1621,29 +1434,25 @@ footer
 /** Traitement des medias queries pour footer 
 si ecran <499 affichages a propos  nos  hebergements assistance sur une seule colonne */
 /**/
-@media only screen and (max-width: 499px)
-{
 
-    footer
-    {
-        display:flex;
-        flex-direction:column;
+@media only screen and (max-width: 499px) {
+
+footer {
+    display:flex;
+    flex-direction:column;
     }
     
-    .apropos
-    {
-        margin-left:20px;
-        width:100%
+.apropos {
+    margin-left:20px;
+    width:100%
     }
 
-    .noshebergements
-    {
+.noshebergements {
     width:100%;
     margin-left:20px;
     }
 
-    .assistance
-    {
+.assistance {
     width:100%;
     margin-left:20px;
     }
