@@ -178,10 +178,25 @@ footer {
     color:#0065FC;
 }
 
+#lm2 {
+    border-top:2px #F2F2F2 solid;
+    padding-top:20px;
+}
+#lm2:active{
+    border-top:2px #0065FC solid;
+    padding-top:20px;
+}
+
 /* s inscrire  definition couleur de la police */
 
 #lm3 {
     color:#0065FC;
+    border-top:2px #F2F2F2 solid;
+    padding-top:20px;
+}
+#lm3:active{
+    border-top:2px #0065FC solid;
+    padding-top:20px;
 }
 
 /* trouvez votre hébergement */
@@ -344,6 +359,16 @@ fieldset p {
     font-size:120%; 
 }
 
+#lm2:hover {
+    border-top:2px #0065FC solid;
+    padding-top:20px;
+} 
+
+#lm3:hover {
+    border-top:2px #0065FC solid;
+    padding-top:20px;
+}
+
 .entmen a:focus {
     outline:0px;
 }
@@ -449,9 +474,36 @@ fieldset p {
 /* s inscrire */
 
 #lm3 {
-    border-bottom:0px;
+    border-bottom:1px #f2f2f2 solid;
     border-top:0px; 
 }
+
+#lm3:active {
+    border-top:0px;
+    border-bottom:1px #0065FC solid;
+}
+
+#lm3:hover {
+    border-top:0px;
+    border-bottom:1px #0065FC solid;
+}
+
+
+#lm2 {
+    border-top:0px;
+    border-bottom:1px #f2f2f2 solid;
+}
+
+#lm2:active {
+    border-top:0px;
+    border-bottom:1px #0065FC solid;
+}
+
+#lm2:hover {
+    border-top:0px;
+    border-bottom:1px #0065FC solid;
+}
+
 
 .entmen ul li:nth-child(3) {
     margin-bottom:10px;
@@ -555,29 +607,58 @@ input[name="rechercheville"] {
     left:20px;
     border-bottom:1px #0065FC solid;
     border-top:0px;
-    padding-bottom:10px;
+    padding-bottom:10px; 
+    padding-right:12px;
+    padding-left:12px;
+    /*width:40%;
+    text-align:center;*/
 }
 
 /* activite */
 
 #lm2 {
     position:absolute;
-    top:80px;
+    /*top:80px;*/
+    top:60px;
     right:50px;
+    border-top:0px;
+    border-bottom:1px #f2f2f2 solid;
+    padding-bottom:10px;
+    padding-right:12px;
+    padding-left:12px;
+   /* width:40%;
+    text-align:center;*/
+}
+
+#lm2:active {
+    border-top:0px;
+    border-bottom:1px #0065FC solid;
+}
+
+#lm2:hover {
+    border-top:0px;
+    border-bottom:1px #0065FC solid;
 }
 
 /* s inscrire */
 
 #lm3 {
     position:absolute;
-    top:24px;
+    /*top:24px;*/
+    top:10px;
     right:0px;
+    border-top:0px;
 }
 
 .titre {
     padding-left:20px;
     padding-right:20px;
-    padding-top:15px;
+    padding-top:5px;
+}
+
+.titre h1 {
+    border-top: #f2f2f2 solid 0.5px;
+    padding-top:10px;
 }
 
 .titre h1 {
@@ -1443,18 +1524,21 @@ footer {
     }
     
 .apropos {
-    margin-left:20px;
+    /*margin-left:20px;*/
+    margin-left:5px;
     width:100%
     }
 
 .noshebergements {
     width:100%;
-    margin-left:20px;
+    /*margin-left:20px;*/
+    margin-left:5px;
     }
 
 .assistance {
     width:100%;
-    margin-left:20px;
+    /*margin-left:20px;*/
+    margin-left:5px;
     }
 
 }
