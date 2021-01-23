@@ -173,10 +173,19 @@ footer {
 /* hébergement  bordure haute et definition couleur de la police */
 
 #lm1 {
-    border-top:2px #0065FC solid;
+    /* md menu */
+    /*border-top:2px #0065FC solid;*/
+    border-top:2px #F2F2F2 solid;
     padding-top:20px;
     color:#0065FC;
 }
+/* md menu */
+#lm1:active{
+    border-top:2px #0065FC solid;
+    padding-top:20px;
+}
+/* fi md menu */
+
 
 #lm2 {
     border-top:2px #F2F2F2 solid;
@@ -198,6 +207,14 @@ footer {
     border-top:2px #0065FC solid;
     padding-top:20px;
 }
+/** md menu **/
+/*#lm3:focus{
+    border-top:2px #0065FC solid;
+    padding-top:20px;
+}*/
+/** fin md menu **/
+
+
 
 /* trouvez votre hébergement */
 
@@ -338,8 +355,10 @@ fieldset p {
 /**/
 /**  media queries pour traiter hover sur ecran destop uniquement **/
 /**/
-
-@media only screen and (min-width: 960px) {
+/** md menu **/
+/*@media only screen and (min-width: 960px) {*/
+/** fin md menu **/
+@media only screen and (min-width: 560px) {
 
     /* Transition sur survol avec souris */
 
@@ -358,6 +377,13 @@ fieldset p {
     color:#0065FC;
     font-size:120%; 
 }
+/* ma menu */
+#lm1:hover {
+    border-top:2px #0065FC solid;
+    padding-top:20px;
+} 
+
+/* fin md menu */
 
 #lm2:hover {
     border-top:2px #0065FC solid;
@@ -372,6 +398,7 @@ fieldset p {
 .entmen a:focus {
     outline:0px;
 }
+
 
     /* Transition sur survol avec souris */
 
@@ -463,10 +490,29 @@ fieldset p {
 /* hebergement */
 
 #lm1 {
+    /** md menu  **/
+    border-bottom:1px #f2f2f2 solid;
+    /** fin md menu **/
+    /*border-bottom:1px #0065FC solid;*/
+    border-top:0px;
+}
+
+/** md menu **/
+
+#lm1:active {
     border-bottom:1px #0065FC solid;
     border-top:0px;
 }
 
+#lm1:hover {
+    border-bottom:1px #0065FC solid;
+    border-top:0px;
+}
+
+
+
+
+/** fin md menu **/
 .entmen ul li:nth-child(1) {
     margin-bottom:10px;
 }
@@ -605,15 +651,29 @@ input[name="rechercheville"] {
     position:absolute;
     top:60px;
     left:20px;
-    border-bottom:1px #0065FC solid;
+    /** md menu **/
+    /*border-bottom:1px #0065FC solid;*/
+    /** fin md menu **/
+    border-bottom:1px #f2f2f2 solid;
     border-top:0px;
     padding-bottom:10px; 
     padding-right:12px;
     padding-left:12px;
-    /*width:40%;
-    text-align:center;*/
 }
 
+/** md menu **/
+
+#lm1:active {
+    border-top:0px;
+    border-bottom:1px #0065FC solid;
+}
+
+#lm1:hover {
+    border-top:0px;
+    border-bottom:1px #0065FC solid;
+}
+
+/** fin md menu **/
 /* activite */
 
 #lm2 {
@@ -626,8 +686,6 @@ input[name="rechercheville"] {
     padding-bottom:10px;
     padding-right:12px;
     padding-left:12px;
-   /* width:40%;
-    text-align:center;*/
 }
 
 #lm2:active {
@@ -650,6 +708,19 @@ input[name="rechercheville"] {
     border-top:0px;
 }
 
+/** md menu **/
+
+#lm3:active {
+    border-top:0px;
+    border-bottom:1px #0065FC solid;
+}
+
+#lm3:hover {
+    border-top:0px;
+    border-bottom:1px #0065FC solid;
+}
+
+/** fin md menu **/
 .titre {
     padding-left:20px;
     padding-right:20px;
@@ -707,6 +778,20 @@ input[name="rechercheville"] {
 .boutonrecherche {
     display:none;
 }
+
+/** md menu **/
+.filtres button:hover {
+    background-color:#0065FC;
+    color:white;
+}
+
+.boutonloupe:hover {
+    background-color:#f2f2f2;
+    color:black;
+}
+
+
+/** fin md menu **/
 
 }
 
